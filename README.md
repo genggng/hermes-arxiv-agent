@@ -60,6 +60,16 @@ hermes gateway setup
 
 不推荐手工复制 prompt 或手工改路径，正确做法是让 Hermes 在部署时自动完成。
 
+如果你已经有可用的本地仓库，只想刷新 cron prompt 和定时任务，不要删仓库重装。
+
+可以在 Hermes 对话里直接说：
+
+```text
+请使用当前仓库里的 UPDATE_CRON_SKILL.md，只更新 hermes-arxiv-agent 的定时任务。不要重新克隆仓库，不要重装依赖。请基于当前本地仓库运行 prepare_deploy.sh，读取最新 cronjob_prompt.generated.txt，并将现有 cron 更新到最新版本；如果不能直接编辑，就删除旧任务后重建一个新的同名任务。
+```
+
+这个流程会复用当前本地仓库和现有数据，只更新定时任务配置，适合在仓库逻辑变更后同步 cron。
+
 ## 关键词默认配置
 
 默认监控方向是 LLM 量化相关论文。
