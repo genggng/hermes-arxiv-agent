@@ -1,0 +1,752 @@
+{
+  "2601.11464": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "with multimodal contexts, urgently requires 成本-有效性 KVcachemanagementandattentionarchitectures. Asvision-languagemodels(VLMs)tackleincreasinglycom- AseriesofstudieshaveidentifiedredundanciesintheKV plex and multimodal tasks, the rapid growth of 关键-值 cache(Lietal.2025).Intermsofsequencelength(Zhang (KV)cacheimposessignificantmemoryandcomputational bottlenecksduringinference.WhileMulti-HeadLatentAt- etal.2023b;Orenetal.2024),KVcachepruningremoves tention(MLA)offersaneffectivemeanstocompresstheKV irrelevanttokensfromthecache.Regardingrepresentation cacheandaccelerateinference,adaptingexistingVLMstothe 精确率(BadriandShaji2023),KVcachequantizationre- MLAarchitecturewithoutcostlypretrainingremainslargely ducestheprecisionofvectorrepresentations.Inthevector unexplored.Inthiswork,wepresentMHA2MLA-VLM,a 维度,modificationssuchasGrouped/Multi-QueryAt- 参数-efficientandmultimodal-awareframeworkforcon- tention(GQAandMQA)restructuretheattentionmechanism vertingoff-the-shelfVLMstoMLA.Ourapproachfeatures byenablingasingleKVpairtobesharedamongagroupof two core techniques: (1) a modality-自适应 partial-RoPE queries(Ainslieetal.2023a;Shazeer2019). strategythatsupportsbothtraditionalandmultimodalsettings DeepSeekintroducedMulti-HeadLatentAttention(MLA), by selectively masking nonessential dimensions, and (2) a modality-decoupledlow-rankapproximation",
+    "chinese_count": 18
+  },
+  "2601.12033": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "公平性/ Criticality 分数 安全 通用 (S) 数据 数据 Quantizationiswidelyadoptedtoreducethe 模型 计算 成本 of large 语言 模型 参数 (大语言模型);however,itsimplicationsforfairness and 安全, particularly in dynamic quantiza- tionandmultilingualcontexts, remainunder- explored. Inthiswork,weconductasystem- atic",
+    "chinese_count": 32
+  },
+  "2601.14053": {
+    "affiliations": "Microsoft; Google",
+    "summary_cn": "Three fundamental 范式 shifts emerge: (1) post- 训练 gains—最近 工作 suggests post-训练 tech- The 领域 of 人工智能 has undergone a rev- niques (人类反馈强化学习, GRPO, pure 强化学习) contribute substan- olution from foundational Transformer architectures to tiallytomodelcapabilities[109,12], withDeepSeek-R1 reasoning-capablesystemsapproachinghuman-levelper- achieving79.8%MATHthroughpureRLwithoutsuper- formanceoncertainspecifictasks. WepresentLLMOr- vised 微调; (2) 效率 revolution—MoE rout- bit, a comprehensive circular taxonomy navigating the ing (18× 效率), Multi-头部 Latent 注意力机制 (8× complete landscape of large 语言 模型 spanning KVcachecompression)enableGPT-4-levelperformance 2019-2025. This 调查 examines over 50 主要 mod- at ¡$0.30/M tokens (100× 成本 减少); (3) democ- els across 15 organizations 通过 eight interconnected ratization—open-来源 Llama 3 (88.6% MMLU) sur- orbital dimensions, documenting the architectural inno- passes GPT-4 (86.4%), while global 模型 from Al- vations, 训练",
+    "chinese_count": 61
+  },
+  "2601.14243": {
+    "affiliations": "NVIDIA",
+    "summary_cn": "The emergence of frontier reasoning large 语言 模型(大语言模型)[1,2]hasdemonstratedunprecedented capabilitiesinsolvinghighlycomplex,multi-stepprob- lems[3,4],settingnewstate-of-the-artacrossdomains ranging from 先进 mathematics to 科学 dis- covery. A 关键 driver of this 成功 is the Chain-of- Thought(思维链)[5,6]范式,whichenablesmodels to generate extended, 连贯 reasoning traces be- fore producing 最终 answers. This 机制 allows 大语言模型 to conduct detailed analyses, 探索 alterna- tive solution paths, and execute structured 逻辑 reasoning. Reinforcement 学习 (强化学习) [7, 8] has htgneL tuolloR 更新 Actor 参考 Reshard Old Log Prob Rollout 1k 35.7 12.6 8.3 40.7 2k 29.7 8.1 6.4 53.6 4k 20.7 5.0 4.4 68.0 8k 16.3 3.33.5 75.5 16k 13.7 2.22.4 8",
+    "chinese_count": 47
+  },
+  "2601.14888": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "Lietal.,2025b;Maetal.,2024;Linetal.,2024; Li et al., 2025a; Yang et al.; Zhang et al., 2026), Reasoningmodelsexcelatcomplextaskssuch yetpriorstudies(Lietal.,2025c;Srivastavaetal., ascodingandmathematics,yettheirinference 2025; Liu et al., 2025b; Wang et al., 2025) 表明 is often slow and 标记-inefficient. To im- that under extreme 低-bit settings (e.g., 3-bit or prove the 推理 效率, post-训练 量化 (PTQ) usually comes with the 2-bitweight-onlyquantization),post-trainingquan- 成本 of large 准确率 drops, especially for tization(PTQ)cantriggersevereaccuracydegra- reasoningtasksunderlow-bitsettings. Inthis dationonreasoningbenchmarks. Wecorroborate",
+    "chinese_count": 18
+  },
+  "2601.15269": {
+    "affiliations": "Department of Electrical and Information Engineering, University of Ruhuna; Department of Information and Communication Technology, University of Agder; NVIDIA",
+    "summary_cn": "—TherapidgrowthofInternetofThings(IoT)devices 方法 such as 低-Rank Adaptation (LoRA) and Quantizes has increased the 规模 and diversity of cyberattacks, exposing (QLoRA) further enable 领域-特定 adaptation with min- limitations in 传统 intrusion detection systems. Classical imal 计算 and 内存 overhead, making them well- machine 学习 (ML) 模型 such as 随机 Forest and Sup- suited for IoT-规模 deployments [8]. port 向量 Machine perform well on known attacks but require retraining to detect unseen or zero-day threats. This 研究 inves- Transformer architectures are generally categorized as tigates lightweight 解码器-only Large 语言 模型 (大语言模型) 编码器-only, 解码器-only, or 编码器–解码器 模型. for IoT attack detection by integrating structured-to-文本 conver- 编码器-basedmodels(e.g.,BERT,RoBERTa)areeffectivefor sion, Quantized 低-Rank Adaptation (QLoRA) 微调, and classificationandstructureddatarepresentation,whiledecoder- Retrieval-AugmentedGeneration(RAG).Networktrafficfeatures only 模型 (e.g., GPT-2, LLaMA, Mistral) are optimized for aretransformedintocompactnatural-languageprompts,enabling efficientadaptationunderconstrainedhardware.Experimentson autoregressive 文本 生成. 解码器 模型 offer distinct the CICIoT2023 数据集 表明 that a QLoRA-tuned LLaMA- advantages in reasoning, 可解释性, and 零样本 adap- 1B 模型 achieves an F1分数-分数 of 0.7124, comparable to the tation, particularly when coupled wi",
+    "chinese_count": 90
+  },
+  "2601.15287": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "Largelanguagemodels(大语言模型)deliverimpressiveresultsforavarietyoftasks, but 最先进 systems require 快速 GPUs with large amounts of 内存. Toreduceboththememoryandlatencyofthesesystems,practitionersquantize theirlearnedparameters,typicallyathalfprecision. Agrowingbodyofresearch focuses on preserving the 模型 性能 with more aggressive bit widths, and some 工作 has been done to 应用 these strategies to other 模型, like vision transformers. In our",
+    "chinese_count": 22
+  },
+  "2601.16536": {
+    "affiliations": "NVIDIA",
+    "summary_cn": "AsLargeLanguageModels(大语言模型)规模,权重-onlyquantization(W4A16: 4-bitweights,16-bit activations)becomescriticalforreducingmemoryfootprintwithminimalaccuracyloss. However, itsefficientdeploymentonHuawei’sAscend910NeuralProcessingUnit(NPU)ischallengingdue tolimitednativemixed-precisionsupportandtheaccelerator’sdecoupledcomputearchitecture. To enablequantizationonsucharchitecture,wepresentthefirstpracticalW4A16matrixmultiplication kerneltailoredfortheAscend910NPU.Ourdesignleveragesvectorcoresforon-the-flyINT4-to- FP16dequantization,cubecoresforhigh-throughputGEMM,andSplit-Kparallelizationtomitigate memorylatency. Performanceevaluationsacrossdiversematrixshapesandbatchsizesshowour",
+    "chinese_count": 9
+  },
+  "2601.17085": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "分析 [17], neglecting an in-depth systematic 调查 into thecontributionsofintermediatelayersortheimpactofvaryingclus- Discretespeechtokensoffersignificantadvantagesforstorageand terquantitiesonSERperformance.Moreover,currentevaluationsof languagemodelintegration,buttheirapplicationinspeechemotion discretetokensforSERareoftenrelegatedtogeneraldownstream recognition(SER)islimitedbyparalinguisticinformationlossdur- taskbenchmarks[18,19].Thereisanotablelackofin-depthanaly- ing 量化. This",
+    "chinese_count": 6
+  },
+  "2601.17187": {
+    "affiliations": "Hebrew University of Jerusalem",
+    "summary_cn": "—This 工作 investigates the 问题 of quan- are first compressed to R bits per entry, and MatMul tized matrix multiplication (MatMul), which has become is computed 基于 on the compressed descriptions of crucialfortheefficientdeploymentoflargelanguagemod- the matrices. In 大语言模型, 量化 serves two 主要 els(大语言模型).Weconsidertwosettings:1)GenericMatMul, purposes: 1)Reducing the IO burden, which is often the wherebothmatricesmustbequantized(权重+activation 量化); and 2) 权重-only 量化, where the bottleneck for MatMul. This is achieved since the num- secondmatrixisonlyknownthroughcovariancematrixΣ berofbytesthatneedstobemovedaroundthehardware X of its columns. For each 设置, we first 综述 the funda- scales linearly with R; 2)Representing the matrices with mentalinformation-theoretictradeoffbetweenquantization small 数据-types, e.g., INT8, FP8, INT4, FP4, such that rate and distortion (高-rate 理论), and then 分析 on top of IO savings one can also accelerate compute the 性能 of several popular 量化 schemes, comparing them to these fundamental limits. Specifically, by 使用 faster multipliers. wediscussrateloss(comparedtoinformationtheoreticop- In light of the above, the last few years have seen tima) of absmax INT and floating-point (FP) 量化, an explosion in the 数量 of",
+    "chinese_count": 49
+  },
+  "2601.17364": {
+    "affiliations": "School of Information Business Intelligence and Data Analytics Department Technology Department University of Petra, Amman, Jordan University of Jordan, Amman, Jordan University of Petra, Amman, Jordan mohammed; II School of Information Business Intelligence and Data Analytics Department Technology Department University of Petra; Jordan University of Jordan; Jordan University of Petra; Department University of Zarqa; Open AI; Google; NVIDIA",
+    "summary_cn": "- This 研究 uses Jordanian 定律 as a 案例 研究 to large 语言 模型 for Arabic legal question-answering, 探索 the 微调 of the Llama-3.1 large 语言 模型 mainly 使用 country-特定 laws as a 案例 研究. for Arabic question-answering. Two versions of the 模型— Llama-3.1-8B-bnb-4bit and Llama-3.1-8B-Instruct-bnb-4bit— This 论文 focuses on 微调 two variants of Llama- were fine-tuned 使用 参数-高效 微调 (PEFT) 3.1—Llama-3.1-8B-bnb-4bit and Llama-3.1-8B-Instruct- with LoRA adapters and 4-bit quantized 模型, leveraging the Unsloth 框架 for accelerated and 资源-高效 bnb-4bit—for Arabic question-answering tasks within 训练. A custom 数据集 of 6000 legal question-answer pairs Jordanian 定律. The 模型 were trained 使用 a custom was curated from Jordanian laws and formatted into structured 数据集 of legal question-answer pairs, leveraging Unsloth for prompts. 性能 was evaluated 使用 the BLEU and the 高效 训练 and LoRA adapters for 参数-高效 ROUGE metrics to compare the fine-tuned 模型 to their updates. The 主要 目标 is to evaluate and compare the respective base versions. 结果 demonstrated improved legal 性能 of the fine-tuned 模型 with their respective reasoning and 准确率 while achieving 资源 效率 base 模型 to determine their effectiveness in 理解 通过 量化 and optimized 微调 strategies. This and answering legal questions usi",
+    "chinese_count": 105
+  },
+  "2601.18150": {
+    "affiliations": "NVIDIA",
+    "summary_cn": "Reinforcement 学习 (强化学习) for large 语言 模型 (大语言模型) is increasingly bottlenecked by rollout (生成), where long 输出 sequence lengths make 注意力机制 and KV cache 内存 dominate end-to-end 步 时间. FP8 offers an attractive lever for accelerating 强化学习 by reducing compute 成本 and 内存 traffic during rollout, but applying FP8 in 强化学习 introduces unique engineering and algorith- mic challenges: 策略 weights 改变 every 步 (requiring repeated 量化 and 权重 synchronization into the 推理 engine) and 低-精确率 rollouts can deviate from the higher-精确率 策略 assumed by the trainer, causing train– 推理 mismatch and 潜力 instability. This report presents a 实践性 FP8 rollout stack for 大语言模型 强化学习, implemented in the verl ecosystem with support for 常见 训练 backends (e.g., FSDP/Mega- tron-LM) and 推理 engines (e.g., vLLM/SGLang). We (i) enable FP8 W8A8 linear-层 rollout 使用 blockwise FP8 量化, (ii) extend FP8 to KV cache to remove long-上下文 内存 bottlenecks via per-步 QKV 规模 recalibration, and (iii) mitigate mismatch 使用 importance-sampling-基于 rollout correction (标记-level TIS/MIS variants). Across dense and MoE 模型, these techniques deliver up to 44% rollout 吞吐量 gains while preserving 学习 behavior comparable to BF16 baselines. 1",
+    "chinese_count": 109
+  },
+  "2601.18306": {
+    "affiliations": "Meta AI; NVIDIA; Deep Mind",
+    "summary_cn": "25 20 量化 is an 有效性 技术 for re- 15 ducingthestoragefootprintandcomputational costsofLargeLanguageModels(大语言模型),but 10 itoftenresultsinperformancedegradation. Ex- 5 istingpost-trainingquantization",
+    "chinese_count": 12
+  },
+  "2601.19026": {
+    "affiliations": "IBM Research; NVIDIA",
+    "summary_cn": "Microscaling 数据 formats leverage per-block tensor 量化 to enable ag- gressivemodelcompressionwithlimitedlossinaccuracy. Unlockingtheirpoten- tialforefficienttrainingandinferencenecessitateshardware-friendlyimplemen- tations that handle matrix multiplications in a native 格式 and adopt 高效 错误-mitigation strategies. Herein, we report the emergence of a surprising be- havior associated with microscaling 量化, whereas the 输出 of a quan- tized 模型 degrades as block 大小 is decreased below a given threshold. This behaviorclasheswiththeexpectationthatasmallerblocksizeshouldallowfora betterrepresentationofthetensorelements. Weinvestigatethisphenomenonboth experimentallyandtheoretically,decouplingthesourcesofquantizationerrorbe- hind it. Experimentally, we 分析 the distributions of several Large 语言 Modelsandidentifytheconditionsdrivingtheanomalousbehavior.Theoretically, welaydownaframeworkshowingremarkableagreementwithexperimentaldata from pretrained 模型 distributions and ideal ones. Overall, we 表明 that the anomaly is driven by the interplay between narrow tensor distributions and the limiteddynamicrangeofthequantizedscales. Basedontheseinsights, wepro- posetheuseofFP8unsignedE5M3(UE5M3)asanovelhardware-friendlyfor- matforthescalesinFP4microscalingdatatypes. WedemonstratethatUE5M3 achievescomparableperformancetotheconventionalFP8unsignedE4M3scales whileobviatingtheneedofglobalscalingoperationsonweightsandactivations. 1",
+    "chinese_count": 26
+  },
+  "2601.19213": {
+    "affiliations": "NVIDIA; Microsoft",
+    "summary_cn": "37.30%reductionrelativetothelatestNVFP4onLLMbench- Existinglow-bitMicroscaling(MX)formats,suchasMXFP4, marks.Furthermore,ourdesigndeliversupto",
+    "chinese_count": 0
+  },
+  "2601.19501": {
+    "affiliations": "Alibaba",
+    "summary_cn": "globaldependenciesamongthemulti-dimensionalfeaturesasso- ciated with 不同 positions of SID; (2) 使用 a unified, fixed Inrecentyears,generativerecommendation(GR)basedonsemantic decodingpathforthesameitemimplicitlyassumesthatallusers IDs(SIDs)hasattractedextensiveattentioninbothacademiaand attendtoitemattributesinthesameorder;(3)autoregressivedecod- industry[33,47].Unliketraditionalrecommendersystems(RSs) ingisinefficientatinferencetimeandstrugglestomeetreal-时间 [8,21,27,39,40,43],whichassigneachitemauniqueIDandlearn requirements.Totacklethesechallenges,weproposeMDGR,a adedicatedembeddingforit,GRtypicallyleveragespre-trained MaskedDiffusionGenerativeRecommendationframeworkthat modelstomapanitem’scontentfeatures(suchastitle,description, reshapestheGRpipelinefromthreeperspectives:codebook,train- and 图像) into a continuous semantic 空间, and then applies ing,andinference.(1)Weadoptaparallelcodebooktoprovidea vectorquantization[11]tocompresseachitemintoasetofdiscrete structuralfoundationfordiffusion-basedGR.(2)Duringtraining, tokens,i.e.,SIDs.AsillustratedinFigure1(a),differenttokensina weadaptivelyconstructmaskingsupervisionsignalsalongboththe SIDoftencorrespondtotheitem’sdifferentcharacteristics[15,26, temporalandsampledimensions.(3)Duringinference,wedevelop 54],suchascategory,brand,andprice,whilethecombinationofall awarm-up–basedtwo-stageparalleldecodingstrategyforefficient tokensdeterminestheitem’soverallpositioninthesemanticspace. generationofSIDs.Extensiveexperiment",
+    "chinese_count": 10
+  },
+  "2601.20026": {
+    "affiliations": "Google",
+    "summary_cn": "Largelanguagemodels(大语言模型)exhibitstronggenerativecapabilitiesbutremain vulnerabletoconfabulations,fluentyetunreliableoutputsthatvaryarbitrarilyeven underidenticalprompts. Leveragingaquantumtensornetwork–basedpipeline, weproposeaquantumphysics-inspireduncertaintyquantificationframeworkthat accountsforthealeatoricuncertaintyintokensequenceprobabilityforsemantic equivalence-基于 聚类 of 大语言模型 generations. In turn, this offers a princi- pledandinterpretableschemeforhallucinationdetection. Wefurtherintroduce anentropy-maximizationstrategythatprioritizeshigh-确定性,semanticallyco- herent outputs and highlights entropy regions where 大语言模型 decisions are likely tobeunreliable,offeringpracticalguidelinesforwhenhumanoversightiswar- ranted.Weevaluatetherobustnessofourschemeunderdifferentgenerationlengths and 量化 levels, dimensions overlooked in prior studies, demonstrating thatourapproachremainsreliableeveninresource-constraineddeployments. A 总计 of116 实验 onTriviaQA,NQ, SVAMP,and SQuAD acrossmulti- plearchitectures(Mistral-7B,Mistral-7B-instruct,Falcon-rw-1b,LLaMA-3.2-1b, LLaMA-2-13b-聊天,LLaMA-2-7b-聊天,LLaMA-2-13bandLLaMA-2-7b)表明 consistentimprovementsinAUROCandAURACoverstate-of-the-artbaselines. 1",
+    "chinese_count": 34
+  },
+  "2601.20088": {
+    "affiliations": "NVIDIA",
+    "summary_cn": "本技术报告提出了量化感知蒸馏（QAD）及恢复NVFP4量化大型语言模型（LLM）和视觉语言模型（VLM）精度的最佳实践。QAD使用KL散度损失将全精度教师模型蒸馏到量化学生模型。QAD对经过多阶段后训练流程（包括监督微调SFT、强化学习RL和模型合并）训练的模型表现出显著的有效性和稳定性。",
+    "chinese_count": 106
+  },
+  "2601.20745": {
+    "affiliations": "School of Software and Microelectronics, Peking University; School of Computer Science, Peking University",
+    "summary_cn": "本文提出HESTIA，一个Hessian引导的可微分量化感知训练框架，用于极低比特LLM。HESTIA用温度控制的softmax松弛替代刚性阶梯函数，在训练早期保持梯度流动，同时逐步强化量化。在Llama-3.2上的评估表明，HESTIA始终优于现有三元QAT基线，在1B和3B模型上实现平均5.39%和4.34%的零样本提升。",
+    "chinese_count": 94
+  },
+  "2601.20901": {
+    "affiliations": "L3S Research Center; University of Luxembourg",
+    "summary_cn": "本文形式化灵敏度感知概念并理论上建立其与差分隐私（DP）的联系。此外开发了监督微调方案，使现有4比特量化LLM更加具备灵敏度感知能力。通过高达21.7%的性能提升，微调后的LLM不仅显著优于基线，还优于其他相同大小的全精度开源和商业模型。",
+    "chinese_count": 97
+  },
+  "2601.21198": {
+    "affiliations": "School of Electronic Science and Engineering, Nanjing University; National Key Laboratory for Novel Software Technology, Nanjing University; School of Artificial Intelligence, Nanjing University",
+    "summary_cn": "本文提出ZIPMOE，一个高效且语义无损的设备端MoE服务系统。ZIPMOE通过缓存亲和性调度与硬件属性协同设计，利用MoE参数中固有的统计冗余。实验表明，ZIPMOE在代表性边缘计算平台上实现了高达72.77%的延迟降低和高达6.76倍的吞吐量提升。",
+    "chinese_count": 86
+  },
+  "2601.21238": {
+    "affiliations": "Institute of Automation, Chinese Academy of Sciences; School of Artificial Intelligence, University of Chinese Academy of Sciences",
+    "summary_cn": "本文探索自回归视觉生成（ARVG）模型的量化问题并识别三个关键挑战：通道级严重异常值、令牌级高度动态激活及样本级分布信息不匹配。提出PTQ4ARVG，一个由增益投影缩放和静态令牌级量化组成的免训练后训练量化框架。",
+    "chinese_count": 87
+  },
+  "2601.21365": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "本文调查先进模型是否可能以有害方式运行，探讨记忆化和上下文学习能力之间的关系。研究发现模型记忆化训练数据的程度与其上下文学习能力之间存在强烈的正相关，引发了对版权和隐私的担忧。",
+    "chinese_count": 84
+  },
+  "2601.21682": {
+    "affiliations": "The Hong Kong Polytechnic University; AntGroup",
+    "summary_cn": "本文提出FIT，一个处理大量删除请求同时保持对灾难性遗忘和后去学习恢复鲁棒性的持续去学习框架。FIT通过严格数据过滤、重要性感知更新和目标层归因来减轻退化，在四个开源LLM和数百个删除请求上实现了忘切度和保留效用之间的最佳权衡。",
+    "chinese_count": 100
+  },
+  "2601.22101": {
+    "affiliations": "Google Research; ISTA",
+    "summary_cn": "本文引入误差补偿优化器（ECO），通过将权重量化后直接应用更新来消除主权重。ECO在每个步骤后量化权重并将量化误差注入优化器动量，形成无额外内存的错误反馈循环。证明ECO在标准假设和衰减学习率下收敛到最优点的恒定半径邻域。",
+    "chinese_count": 95
+  },
+  "2601.22362": {
+    "affiliations": "HuggingFace; ENS Paris-Saclay",
+    "summary_cn": "本文对NVIDIA H100 GPU上的LLM推理能量和延迟进行了详细实证研究，分析量化、批处理大小和服务配置的影响。结果表明较低精度格式仅在计算受限场景下才能节能；批处理提高能源效率；结构化请求时间安排可减少高达100倍的单位请求能量。",
+    "chinese_count": 92
+  },
+  "2601.22966": {
+    "affiliations": "Qwen Team; University of Edinburgh; Stanford University; Tsinghua University",
+    "summary_cn": "本文研究大型语言模型中涌现异常值的功能角色，包括注意力sink和残差sink。假设这些异常值与相应归一化协同作用，有效重新缩放其他非异常值组件。提出异常值驱动重新缩放现象，验证其对训练稳定性和量化的影响。",
+    "chinese_count": 88
+  },
+  "2602.00088": {
+    "affiliations": "School of Electrical Engineering, Korea University",
+    "summary_cn": "本文提出STM，一个将连续时间序列值转换为基于人类认知结构量化技术符号令牌的通用时间序列预测机制。STM通过结构化符号转换捕获时间动态，使语言模型能够专注于时间序列数据的关键部分，在各种数据集上进行了评估。",
+    "chinese_count": 92
+  },
+  "2602.00135": {
+    "affiliations": "University of Electronic Science and Technology of China; Chengdu University of Information Technology; Harbin Institute of Technology, Shenzhen",
+    "summary_cn": "本文提出LLaVA-FA，一个在频域执行联合低秩加量化近似的、高效的多模态大型模型。LLaVA-FA利用傅里叶变换的去相关和共轭对称性质，在视觉语言任务上实现更紧凑和准确的权重表示。",
+    "chinese_count": 70
+  },
+  "2602.00165": {
+    "affiliations": "Postgraduate Program in Computer Science, Federal University of Ouro Preto; Computing Department, Federal University of Ouro Preto",
+    "summary_cn": "本文提出BenfordQuant（BENQ），一个受Benford定律启发的简单、无数据的非均匀量化器。BENQ用对数间距编码本替代均匀网格，将更多分辨率分配给频繁的小幅度权重。在小语言模型上，BENQ始终改善困惑度，在更大LLM上仍具有竞争力。",
+    "chinese_count": 79
+  },
+  "2602.00899": {
+    "affiliations": "Aditya Birla Group",
+    "summary_cn": "本文将内容推荐cast为推荐即检索：给定自然语言意图信号，从大型目录中通过语义相似性检索最相关的K个商品。提出基于双塔bi-encoder的可扩展密集检索系统，使用多个负样本排序损失在Amazon Reviews 2023时尚子集上进行微调。",
+    "chinese_count": 82
+  },
+  "2602.00969": {
+    "affiliations": "The Hong Kong University of Science and Technology ; The Hong Kong University of Science and Technology",
+    "summary_cn": "本文通过形式化Zipfian统计与随机矩阵理论之间的联系，证明嵌入奇异值谱中的幂律衰减是语义编码的基本前提。推导的理论界限表明，均匀量化引入的噪声底限不成比例地截断谱尾，导致谱平坦化。",
+    "chinese_count": 80
+  },
+  "2602.01027": {
+    "affiliations": "College of Electronic Information and Optical Engineering",
+    "summary_cn": "本文提出SFMP，一个用于大型语言模型的无搜索且硬件友好的混合精度量化框架。该框架建立在分数位宽、块级混合精度、行-列权重重排序和统一GEMM内核四个创新想法之上，在相同内存约束下优于最先进的层间混合精度方法。",
+    "chinese_count": 90
+  },
+  "2602.01410": {
+    "affiliations": "University of Michigan; University of Massachusetts Amherst; NTT Research, Inc.",
+    "summary_cn": "本文介绍SNIP，一个用于LLM预训练的细粒度自适应混合精度训练框架，支持亚字节精度。SNIP定期收集激活、梯度和优化器状态的统计数据，定义前向传递中损失散度和后向传递中权重散度两个关键指标，指导整数线性规划问题系统优化层间精度。",
+    "chinese_count": 97
+  },
+  "2602.01613": {
+    "affiliations": "Minima AI, Inc.",
+    "summary_cn": "Large language models (LLMs) deliver strong performance but demand substantial GPU memory and incur high latency. Both training and deployment are ultimately bounded by VRAM and tokens-per-second (TPS). In this work we present Minima, a production-ready compression pipeline that combines tensor-network (TN) decompositions, a learned sensitivity model, aggressive runtime engineering, and speculative decoding.",
+    "chinese_count": 0
+  },
+  "2602.02047": {
+    "affiliations": "The Hong Kong University of Science and Technology ; Alibaba Group; University of Toronto",
+    "summary_cn": "Training large language models using 4-bit arithmetic enhances throughput and memory efficiency. Yet, the limited dynamic range of FP4 increases sensitivity to outliers. While NVFP4 mitigates quantization error via hierarchical mixed precision, there is still a notable loss gap relative to BF16.",
+    "chinese_count": 0
+  },
+  "2602.02126": {
+    "affiliations": "Samsung Research",
+    "summary_cn": "Group-wise quantization is an effective strategy for mitigating accuracy degradation in low-bit quantization of large language models (LLMs). Among existing methods, GPTQ has been widely adopted due to its efficiency; however, it neglects input statistics and inter-group correlations when determining group scales.",
+    "chinese_count": 0
+  },
+  "2602.02151": {
+    "affiliations": "University of Cambridge; University of Bologna; University of Lugano",
+    "summary_cn": "Adaptive Rounding has emerged as an alternative to round-to-nearest (RTN) for post-training quantization by enabling cross-element error cancellation. Yet, dense and element-wise rounding matrices are prohibitively expensive for billion-parameter large language models (LLMs). We revisit adaptive rounding from an efficiency perspective and propose VQ-Round.",
+    "chinese_count": 0
+  },
+  "2602.02538": {
+    "affiliations": "Zhejiang University; Tencent",
+    "summary_cn": "Post-training quantization (PTQ) is a widely used method to compress large language models (LLMs) without fine-tuning. It typically sets quantization hyperparameters based on current-layer activations. Although this method is efficient, it suffers from quantization bias and error accumulation.",
+    "chinese_count": 0
+  },
+  "2602.02546": {
+    "affiliations": "Shanghai Jiao Tong University; Tencent Hunyuan",
+    "summary_cn": "Weight-only post-training quantization (PTQ) is appealing, as it reduces memory usage and enables practical speedup without low-bit operators or specialized hardware. However, accuracy often degrades significantly in weight-only PTQ at sub-4-bit precision.",
+    "chinese_count": 0
+  },
+  "2602.02581": {
+    "affiliations": "The Pennsylvania State University; Carnegie Mellon University Africa",
+    "summary_cn": "Weight-only quantization is important for compressing Large Language Models (LLMs). Inspired by the spirit of classical magnitude pruning, we study whether the magnitude of weight updates during reasoning-incentivized fine-tuning can provide valuable signals for quantizing Large Reasoning Models (LRMs).",
+    "chinese_count": 0
+  },
+  "2602.02711": {
+    "affiliations": "University of Arizona; University of Pittsburgh; University of North Carolina at Chapel Hill; University of Central Florida",
+    "summary_cn": "Large language models (LLM) achieve strong performance in long-horizon decision-making tasks through multi-step interaction and reasoning at test time. While practitioners commonly believe a higher task success rate necessitates the use of a larger and stronger LLM model, multi-step interaction with a large LLM incurs prohibitive inference cost.",
+    "chinese_count": 0
+  },
+  "2602.02726": {
+    "affiliations": "University of Waterloo; Microsoft Research; Mila",
+    "summary_cn": "Deep Learning models encode rich semantic information in their hidden representations. However, it remains challenging to understand which parts of this information models actually rely on when making predictions. A promising line of post-hoc concept-based explanation methods relies on clustering token representations.",
+    "chinese_count": 0
+  },
+  "2602.03120": {
+    "affiliations": "Southern University of Science and Technology; University of Texas at Austin; MIT",
+    "summary_cn": "Post-Training Quantization (PTQ) is essential for deploying Large Language Models (LLMs) on memory-constrained devices, yet it renders models static and difficult to fine-tune. Standard fine-tuning paradigms, including Reinforcement Learning (RL), fundamentally rely on backpropagation and high-precision weights to compute gradients.",
+    "chinese_count": 0
+  },
+  "2602.03533": {
+    "affiliations": "Nanyang Technological University; University of Oxford; Shanghai Artificial Intelligence Laboratory",
+    "summary_cn": "The rapid progress of large multimodal models has inspired efforts toward unified frameworks that couple understanding and generation. While such paradigms have shown remarkable success in 2D, extending them to 3D remains largely underexplored.",
+    "chinese_count": 0
+  },
+  "2602.03782": {
+    "affiliations": "Shanghai Jiao Tong University; Anyverse Dynamics; Institute of Automation, Chinese Academy of Sciences; University of Chinese Academy of Sciences; Ant Group",
+    "summary_cn": "The advent of Vision-Language-Action (VLA) models represents a significant leap for embodied intelligence, yet their immense computational demands critically hinder deployment on resource-constrained robotic platforms. Intuitively, low-bit quantization is a prevalent and preferred technique for large-scale model compression.",
+    "chinese_count": 0
+  },
+  "2602.04099": {
+    "affiliations": "University of Melbourne; University of Adelaide; University of Cambridge; University of Auckland",
+    "summary_cn": "Perplexity is a widely adopted metric for assessing the predictive quality of large language models (LLMs) and often serves as a reference metric for downstream evaluations. However, recent evidence shows that perplexity can be unreliable, especially when irrelevant long inputs are used.",
+    "chinese_count": 0
+  },
+  "2602.04163": {
+    "affiliations": "Chinese University of Hong Kong; University of Hong Kong; Shanghai Jiao Tong University; Zhejiang University",
+    "summary_cn": "Large language model (LLM) inference is often bounded by memory footprint and memory bandwidth in resource-constrained deployments, making quantization a fundamental technique for efficient serving. While post-training quantization (PTQ) maintains high fidelity at 4-bit, it deteriorates at 2-3 bits.",
+    "chinese_count": 0
+  },
+  "2602.04460": {
+    "affiliations": "Meituan",
+    "summary_cn": "Semantic IDs serve as a key component in generative recommendation systems. They not only incorporate open-world knowledge from large language models (LLMs) but also compress the semantic space to reduce generation difficulty. However, existing methods suffer from two major limitations.",
+    "chinese_count": 0
+  },
+  "2602.04565": {
+    "affiliations": "Southwest University; University of Chinese Academy of Sciences; Renmin University of China",
+    "summary_cn": "Understanding visual degradations is a critical yet challenging problem in computer vision. While recent Vision-Language Models (VLMs) excel at qualitative description, they often fall short in understanding the parametric physics underlying image degradations.",
+    "chinese_count": 0
+  },
+  "2602.04595": {
+    "affiliations": "Shanghai Jiao Tong University",
+    "summary_cn": "Large Language Models (LLMs) are powerful but incur high memory and computation costs. Weight-only quantization is an effective solution with integer (INT) weights and floating-point (FP) activations being adopted to preserve accuracy.",
+    "chinese_count": 0
+  },
+  "2602.04929": {
+    "affiliations": "Samsung Research, Seoul, Korea; When combined with outlier suppression techniques, it achieves state-of-the-art; available at; constrained hardware challenging. As a practical solution to reduce memory usage and accelerate; layers, mitigating error accumulation across layer depths . Second, TUR-",
+    "summary_cn": "The rapid growth of 大语言模型s (LL Ms) has heightened the importance of 后训练量化 (PTQ) for 减少 内存 and computation 成本. Among PTQ 方法, GPTQ has gained significant 注意力 for its 效率, enabling billion-scale LL Ms to be quantized within a few GPU hours. However, GPTQ’s assumption of layer-wise independence leads to severe 准确率 drops in low-bit regimes. Recently, BOA improved upon GPTQ by incorporating inter- layer dependencies within 注意力 modules, but its reliance ",
+    "chinese_count": 29
+  },
+  "2602.05269": {
+    "affiliations": "constrained by the \"Memory Wall\" — a hardware limitation where memory bandwidth,; not compute, becomes the bottleneck. Recent .-bit quantization techniques (e.g., BitNet; Consequently, the research community has pivoted towards extreme quantization techniques.; Scope and Limitations; investigate whether combining disparate modeling techniques — specifically ternary quantization",
+    "summary_cn": "The 部署 of 大语言模型s (LL Ms) on 边缘 devices is fundamentally constrained by the \"内存 Wall\" — a hardware limitation where 内存 bandwidth, not 计算, becomes the bottleneck. Recent 1.58-bit 量化 techniques (e.g., Bit Net b1.58) dramatically 减少 内存 footprint but typically incur a perplexity degradation of 20–25% compared to FP16 baselines. In this work, we 提出 Hybrid Gated Flow (HGF), a dual-stream 架构 that couples a 1.58-bit ternary backbone with a learnable, low-",
+    "chinese_count": 25
+  },
+  "2602.05367": {
+    "affiliations": "and limiting the expressive capacity of the model.; pushing the research frontier towards the -bit regime. This; that severely limits the model’s expressive power.; which inherently limit the model’s capacity to derive an op-; mitigated solely by weight approximation. Consequently",
+    "summary_cn": "高效 部署 of 大语言模型s (LL Ms) requires extreme 量化, forcing a critical trade-off between low-bit 效率 and 性能. Residual binarization en- ables hardware-friendly, matmul-free 推理 by stacking 二进制 (±1) layers, but is plagued by pathological feature co-adaptation. We identify a key failure mode, which we term inter-path adap- tation: during 量化感知 训练 (QAT), parallel residual 二进制 paths learn redundant fea- tures, degrading the error-compensation structure and limi",
+    "chinese_count": 29
+  },
+  "2602.05902": {
+    "affiliations": "1Department of Electrical and Computer Engineering, The Uni-; versity of Texas at Austin, TX, USA. 2DEVCOM Army Research; Laboratory, Adelphi, MD, USA.",
+    "summary_cn": "大语言模型s (LL Ms) deliver robust per- formance across diverse applications, yet their de- ployment often faces challenges due to the mem- ory and latency 成本 of storing and accessing billions of parameters. Post-训练 quantiza- tion (PTQ) enables 高效 推理 by map- ping pretrained weights to low-bit formats with- out retraining, but its effectiveness depends crit- ically on both the 量化 objective and the rounding procedure used to obtain low-bit weight repres",
+    "chinese_count": 15
+  },
+  "2602.06057": {
+    "affiliations": "straints than datacenter infrastructure: strict power en-; velopes , limited mem-; foundational step toward closing this gap by introducing; on Asgar et al.’s  seminal datacenter-; Limitation",
+    "summary_cn": "Deploying 大语言模型s (LL Ms) on heterogeneous 边缘 devices demands frameworks that jointly optimize energy 效率, 推理 quality, and reliability. Our prior QEIL v1 (Kumar & Jha, 2026) achieved 4.82× IPW 改进 but relied on static 效率 factors, greedy 优化, and unverified candidate selection. QEIL v2 replaces every static heuristic with physics-grounded, runtime-adaptive 模型. We 提出 three device–workload metrics: DASI (roofline-derived 计算 utilization), CPQ (内存 pressur",
+    "chinese_count": 25
+  },
+  "2602.06063": {
+    "affiliations": "edge dataflow architecture . Our work introduces a set of hardware-aware techniques.; . Major vendors . AMD’s Ryzen AI; strated . We present the first; Clemson University, USA 2Electrical and Computer Engineering",
+    "summary_cn": "We 提出 the first end-to-end 部署 of the Gemma3 family of large language and vision 模型 on a tiled 边缘 dataflow 架构 (AMD Ryzen AI NPU). Our work 提出 a set of hardware-aware techniques. For prefill, we 提出 an 高效 dequantization engine, optimize tiled matrix multiplication kernels, and 提出 Flow QKV, a chunked, pipelined 注意力 mechanism. For decoding, we 提出 Fused DQP, which fuses dequantization and projection into a single kernel, and Flow KV, which re-structure",
+    "chinese_count": 23
+  },
+  "2602.06181": {
+    "affiliations": "1UC Berkeley & UCSF; 2Meta Superintelligence Labs; unpredictable shifts in social bias that can reintroduce harmful behaviors mitigated during alignment; Computational Medicine at The Hospital for Sick Children, Toronto. Meta was involved solely in an advisory role.; . Preference for Refusal/Uncertainty Under A Biased Prompt",
+    "summary_cn": "后训练量化 reduces the computational 成本 of 大语言模型s but fundamentally alters their social biases in ways that aggregate metrics fail to capture. We 提出 the first 大规模 study of 50 quantized 模型 evaluated on Post 训练 Bias Bench, a unified 基准 of 13 closed- and open-ended bias datasets. We identify a phenomenon we term 量化-induced masked bias flipping, in which up to 21% of responses flip between biased and unbiased states after 量化, despite showing no change in ",
+    "chinese_count": 27
+  },
+  "2602.06183": {
+    "affiliations": "FAIR at Meta; end-to-end by . to .×. This approach is applicable to all NVIDIA GPUs starting with the A100 generation,; and is orthogonal to common optimization techniques, such as, quantization, and can also be applied to; Nvidia introduced a semi-structured format called n : m sparsity along with hardware support  to; Researchers have investigated different techniques to use  :  sparse matrix multiplication to accelerate LLM training.",
+    "summary_cn": "摘要信息提取失败",
+    "chinese_count": 8
+  },
+  "2602.06252": {
+    "affiliations": "imized through optimized scheduling techniques by multicasting; compared to Google TPUv4i, achieving up to .× lower total; HE rapid rise of LLMs, based on the foundational Trans-; EP/R024642/), the RAEng Chair in Emerging Technologies , and EPSRC AI Hub for Productive Research and Innovation",
+    "summary_cn": "The 性能 gains obtained by large lan- guage 模型 (LL Ms) are closely linked to their substantial com- putational and 内存 requirements. Quantized LL Ms offer sig- nificant advantages with extremely quantized 模型, motivating the development of specialized architectures to accelerate their workloads. This paper proposes D-Legion, a 新 scalable many- core 架构, designed using many adaptive-precision systolic array cores, to accelerate matrix multiplication in",
+    "chinese_count": 11
+  },
+  "2602.06694": {
+    "affiliations": "ter. Moreover, these techniques require complex weight-; grouping metadata (Huang et al., ; Dong et al., ;; and storage limitations of current methods.; tural and additional storage limitations inherent in binary; constrained environments and limit such QAT methods from",
+    "summary_cn": "权重量化 has become a standard 方法 for efficiently serving 大语言模型s (LL Ms). However, existing 方法 fail to efficiently compress 模型 to 二进制 (1-bit) levels, as they either require large amounts of 数据 and 计算 or incur additional storage. In this work, we 提出 NANOQUANT, the first 后训练量化 (PTQ) 方法 to com- press LL Ms to both 二进制 and sub-1-bit lev- els. NANOQUANT formulates 量化 as a low-rank 二进制 factorization problem, and com- presses full-precision weights to low-r",
+    "chinese_count": 39
+  },
+  "2602.07374": {
+    "affiliations": "Nisharg Nargund1 and Priyesh Shukla2; 1KIIT Bhubaneshwar, India and 2IIIT Hyderabad, India; limiting deployment on edge devices and resource-constrained; Key Research Question: Can language models be trained; technique post-training, TernaryLM learns quantization-aware",
+    "summary_cn": "大语言模型s (LL Ms) achieve remarkable 性能 but demand substantial computational resources, limiting 部署 on 边缘 devices and resource-constrained environments. We 提出 Ternary LM, a 132 M-parameter trans- former trained natively with 三进制量化 {−1, 0, +1} (log2(3) ≈ 1.58)-bit effective precision), achieving signifi- cant 内存 reduction without sacrificing language modeling capability. Unlike 后训练量化 approaches that quantize pre-trained full-precision 模型, Ternary LM ",
+    "chinese_count": 27
+  },
+  "2602.07465": {
+    "affiliations": "Samsung Research, Seoul, South Korea; To alleviate such costs, recent research has investigated; quantization techniques [] that reduce weight or activation; which severely limits their scalability, especially for LLMs; with fixed length sequences makes limited Hessian diagonals.",
+    "summary_cn": "后训练量化 (PTQ) is a cornerstone for ef- ficiently deploying 大语言模型s (LL Ms), where a small calibration set critically affects 量化 perfor- mance. However, conventional practices rely on random sequences of fixed length, overlooking the variable-length nature of LLM inputs. Input length directly influences the ac- tivation distribution and, consequently, the weight importance captured by the Hessian, which in turn affects 量化 outcomes. As a 结果, Hessian e",
+    "chinese_count": 16
+  },
+  "2602.07547": {
+    "affiliations": "1TU Berlin, Germany, 2IIIT-Hyderabad, India, 3GE HealthCare, 4AWS AI Labs, Amazon; 5Microsoft Research, Bangalore, India, 6Microsoft, Hyderabad, India, 7IIT Delhi, India; alignment. Hence, we ask the following research questions :",
+    "summary_cn": "Recent work has shown that scaling 大语言模型s (LL Ms) improves their alignment with human brain activity, yet it remains unclear what drives these gains and which representational properties are responsible. Although larger 模型 often yield better task 性能 and brain alignment, they are increasingly difficult to analyze mechanistically. This raises a fundamental question: what is the minimal 模型 capacity required to capture brain-relevant representations?",
+    "chinese_count": 11
+  },
+  "2602.07596": {
+    "affiliations": "ing mitigation strategies often face critical limi-; sion. To resolve these limitations, we leverage; 1Beijing Institute of Technology 2Institute of Automation, Chi-; nese Academy of Sciences 3Hebei Province Key Laboratory of; Big Data Science and Intelligent Technology.",
+    "summary_cn": "Weight-only 后训练量化 (PTQ) is crucial for 高效 大语言模型 (LLM) 部署 but suffers from 准确率 degradation caused by weight and activation outliers. Exist- ing mitigation strategies often face critical limi- tations: they either yield insufficient outlier sup- pression or incur significant 部署 ineffi- ciencies, such as 推理 latency, heavy pre- processing, or reliance on complex operator fu- sion. To resolve these limitations, we leverage a key insight: over-paramete",
+    "chinese_count": 21
+  },
+  "2602.07899": {
+    "affiliations": "1Northwestern Polytechnical University,; 2Nanjing University of Science and Technology, Nanjing, China; 3Intellifusion, Shenzhen, China 4iFLYTEK, China. Correspon-; existing compression techniques, post-training quantization",
+    "summary_cn": "后训练量化 (PTQ) is a primary ap- proach for deploying 大语言模型s with- out fine-tuning, and the quantized 性能 is often strongly affected by the calibration in PTQ. By contrast, in vision–language 模型 (VL Ms), substantial differences between visual and 文本 tokens in their activation distributions and sensitivities to 量化 error pose sig- nificant challenges for effective calibration dur- ing PTQ. In this work, we rethink what PTQ calibration should align with ",
+    "chinese_count": 18
+  },
+  "2602.08376": {
+    "affiliations": "1McGill University; standard solvers  admit a lattice-decoding inter-",
+    "summary_cn": "后训练量化 (PTQ) is widely used to compress 大语言模型s without retrain- ing. However, many existing weight-only 方法 rely on heuristic objectives and greedy rounding, thus leading to noticeable degradation under low- bit 量化 In this work, we 提出 OJBKQ (Objective-Joint Babai-Klein 量化 with K- Best Sampling), a layer-wise PTQ 方法 that for- mulates weight 量化 as a joint 优化 problem over activations and weights. This for- mulation 结果 in a multiple-right-hand-side box",
+    "chinese_count": 26
+  },
+  "2602.08600": {
+    "affiliations": "¶Department of Informatics, University of Oslo, Norway; languages where annotated QE data is limited, existing approaches struggle to achieve reliable performance.; performance under limited data and compute budgets. We release our dataset, code, and trained models to; support future researcha.; Considering these limitations, we introduce the first segment-level quality estimation dataset for",
+    "summary_cn": "质量估计 (QE) aims to assess the quality of 机器翻译 (MT) outputs without relying on reference translations, making it essential for real-world, 大规模 MT evaluation. 大语言模型s (LL Ms) have shown significant promise in advancing the field of quality estimation of 机器翻译. However, most of the QE approaches solely rely on scalar quality scores, offering no explicit information about the translation errors that should drive these judgments. Moreover, for low-resour",
+    "chinese_count": 20
+  },
+  "2602.08817": {
+    "affiliations": "Sun Yat-sen University; National University of Singapore",
+    "summary_cn": "本文提出Kirin框架，通过整数-脉冲混合编码实现ANN到SNN的无精度损失转换，同时优化时间和能效。框架采用尖峰矩阵混合策略，将导致长时间窗口的高位宽离群值保留为整数格式，显著降低SNN延迟并提升能效。实验表明Kirin在W4A4设置下可实现精度无损转换。",
+    "chinese_count": 98
+  },
+  "2602.09130": {
+    "affiliations": "University College London; University of Tübingen",
+    "summary_cn": "本文提出UNICOMP统一评估框架，系统比较剪枝、量化和知识蒸馏三种大语言模型压缩技术，从性能、可靠性和效率三个维度对压缩模型进行评估，揭示压缩对推理能力、多语言和指令跟随能力的差异化影响，为压缩方法选择提供全面指导。",
+    "chinese_count": 94
+  },
+  "2602.09323": {
+    "affiliations": "Shandong University; Huazhong University of Science and Technology",
+    "summary_cn": "本文提出LLM-CoOpt算法，针对大语言模型推理中的内存带宽瓶颈、计算冗余和长序列处理低效问题，通过协同优化内存带宽与计算资源分配，显著提升长序列处理效率。实验证明该方法在多种LLM上均能有效降低延迟和提高吞吐量。",
+    "chinese_count": 90
+  },
+  "2602.09434": {
+    "affiliations": "Texas Tech University",
+    "summary_cn": "本文提出基于拒绝向量的模型指纹框架，利用安全对齐诱导的行为模式追踪大语言模型的知识产权。这些从模型内部表征中提取的方向性模式可作为稳健的行为指纹，有效识别未经授权的衍生模型，为LLM知识产权保护提供新方案。",
+    "chinese_count": 95
+  },
+  "2602.09883": {
+    "affiliations": "Shanghai Jiao Tong University; Meituan",
+    "summary_cn": "本文提出AdaTSQ框架，针对扩散Transformer的时间敏感性，通过Pareto感知的时间动态位宽分配策略和Fisher引导的时序校准机制，在边缘设备上实现高效的图像和视频生成。该方法在多个先进DiT模型上验证了优异的效率-质量权衡。",
+    "chinese_count": 82
+  },
+  "2602.10345": {
+    "affiliations": "Indiana University School of Medicine; Indiana University; University of Notre Dame; Lamar University",
+    "summary_cn": "本文提出可扩展AI系统，从非结构化生物医学文献中自动识别和提取循证行为干预，通过多阶段管道结合关键词启发、TF-IDF和深度学习模型，从海量文献中高效提取有效干预措施，支持医疗决策优化和健康结果改善。",
+    "chinese_count": 86
+  },
+  "2602.10431": {
+    "affiliations": "Sungkyunkwan University",
+    "summary_cn": "本文提出QTALE框架，实现令牌自适应层执行与量化的无缝集成。框架通过多样化训练路径策略确保细粒度执行路径探索，并引入后训练机制灵活调整执行比例以重新引入冗余，在保持精度的同时显著降低大语言模型部署成本。",
+    "chinese_count": 92
+  },
+  "2602.10934": {
+    "affiliations": "Nanyang Technological University; Tsinghua University",
+    "summary_cn": "本文提出CAT因果音频分词器，采用纯Transformer架构联合优化编码器、量化和解码器，实现端到端高保真音频重建。该分词器通过可扩展的同质架构克服了传统方法中预训练编码器和异构CNN的归纳偏置限制，为音频大模型提供可扩展的离散tokenizer。",
+    "chinese_count": 93
+  },
+  "2602.11184": {
+    "affiliations": "Houmo AI; Nanyang Technological University",
+    "summary_cn": "本文解决专家混合模型中向量量化导致的性能下降问题，通过分析专家表示冗余和代码本低效利用的根源，提出针对性优化方案显著提升压缩效果。方法在保持MoE模型性能的同时大幅降低了内存和计算需求。",
+    "chinese_count": 86
+  },
+  "2602.11513": {
+    "affiliations": "University of Science and Technology of China; National University of Singapore",
+    "summary_cn": "本文提出DEL框架，通过差分隐私随机量化和软提示技术实现高效的隐私保护LLM分割推理。框架通过嵌入投影模块和差分隐私随机量化机制降低通信开销，同时利用服务器端软提示补偿隐私保护带来的效用损失。",
+    "chinese_count": 86
+  },
+  "2602.12370": {
+    "affiliations": "Brown University; ByteDance",
+    "summary_cn": "本文提出统一的多模态运动-语言生成模型，通过连续自回归token实现运动理解和生成的融合。模型避免了传统方法中微调有限文本-运动配对数据导致的灾难性遗忘问题，实现了运动与语言能力的有效统一。",
+    "chinese_count": 84
+  },
+  "2602.12878": {
+    "affiliations": "Technical University of Cluj-Napoca; University of Arizona",
+    "summary_cn": "本文探究大语言模型学习的社会文化价值观，构建多语言社会文化陈述数据集评估模型在Hofstede文化维度上的价值刻划能力。研究揭示了主流LLM和后训练对齐方法在文化代表性上的差异，为开发更具包容性的AI系统提供参考。",
+    "chinese_count": 90
+  },
+  "2602.13073": {
+    "affiliations": "Opt-AI Inc.",
+    "summary_cn": "本文提出LCSB方法，通过层循环选择性反向传播仅计算部分层的梯度。方法利用残差连接保证梯度流经恒等路径，同时AdamW动量为非选定层提供隐式更新，从理论上证明其收敛性，实验表明可加速移动端LLM微调。",
+    "chinese_count": 82
+  },
+  "2602.13151": {
+    "affiliations": "Pontifícia Universidade Católica do Rio Grande do Sul; HP Inc; Kunumi Institute",
+    "summary_cn": "本文提出量化鲁棒的LLM遗忘方法，通过低秩适应将遗忘更新集中在可训练适配器中，使量化后仍能保持遗忘效果。该方法解决低比特量化掩盖遗忘更新的问题，在4比特量化设置下仍能有效保护隐私并保持模型效用。",
+    "chinese_count": 88
+  },
+  "2602.13289": {
+    "affiliations": "TU Darmstadt; Toyota Motor Europe",
+    "summary_cn": "本文评估后训练量化对多模态大语言模型可靠性的影响，研究量化压缩对视觉问答准确性和置信度校准的双重作用。提出结合int4MBQ和Selector置信度估计器的方案，实现最佳效率-可靠性权衡，显著缓解量化对可靠性的负面影响。",
+    "chinese_count": 89
+  },
+  "2602.13628": {
+    "affiliations": "Nanyang Technological University; University of Illinois Urbana-Champaign; University of Waterloo; University of Sydney",
+    "summary_cn": "本文研究移动边缘计算中的紧凑LLM部署和世界模型辅助推理卸载优化，提出ECLD框架联合剪枝、量化和蒸馏构建边缘可部署模型。制定卸载优化问题并利用世界模型-近端策略优化算法求解，在多个LLM上验证了有效性。",
+    "chinese_count": 86
+  },
+  "2602.13710": {
+    "affiliations": "Beijing Normal University; National University of Singapore; A*STAR",
+    "summary_cn": "本文研究视觉-语言-动作模型的1比特量化问题，提出将VLA模型二值化以大幅降低计算和内存开销。方法在保持任务性能的同时显著提升部署效率，为资源受限机器人和边缘平台的VLA应用提供了可行方案。",
+    "chinese_count": 82
+  },
+  "2602.13953": {
+    "affiliations": "NVIDIA Research, Yale University, University of Southern California, ∗Work done during internship at NVIDIA Research",
+    "summary_cn": "本文研究了量化、大语言模型、语言模型、强化学习等核心技术，针对大语言模型效率优化提出新方案，大量实验结果充分验证了该方法的有效性和优越性，具有重要的理论价值和应用前景，该方法在性能方面表现优异。",
+    "chinese_count": 89
+  },
+  "2602.14432": {
+    "affiliations": "2Carnegie Mellon University",
+    "summary_cn": "本文研究了量化、大语言模型、语言模型、Transformer等核心技术，针对大语言模型效率优化提出新方案，大量实验结果充分验证了该方法的有效性和优越性，具有重要的理论价值和应用前景。",
+    "chinese_count": 73
+  },
+  "2602.15382": {
+    "affiliations": "1Purdue University, 3Carnegie Mellon University, 4Georgia Institute of Technology *",
+    "summary_cn": "本文研究了量化、大语言模型、语言模型、Transformer等核心技术，针对大语言模型效率优化提出新方案，大量实验结果充分验证了该方法的有效性和优越性，具有重要的理论价值和应用前景。",
+    "chinese_count": 73
+  },
+  "2602.16640": {
+    "affiliations": "Department of Computer Science and Engineering, Indian Institute of Information Technology, Compunnel Inc",
+    "summary_cn": "本文研究了量化、大语言模型、语言模型、Transformer等核心技术，针对大语言模型效率优化提出新方案，大量实验结果充分验证了该方法的有效性和优越性，具有重要的理论价值和应用前景。",
+    "chinese_count": 73
+  },
+  "2602.17681": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "本文研究了量化、大语言模型、语言模型、优化方法等核心技术，针对大语言模型效率优化提出新方案，大量实验结果充分验证了该方法的有效性和优越性，具有重要的理论价值和应用前景，该方法在性能方面表现优异。",
+    "chinese_count": 89
+  },
+  "2602.17698": {
+    "affiliations": "1Meta Superintelligence Labs, Meta Platforms, Inc. 2University, of California, Los Angeles 3Meta Platforms, Inc..",
+    "summary_cn": "本文研究了量化、大语言模型、语言模型、强化学习等核心技术，针对大语言模型效率优化提出新方案，大量实验结果充分验证了该方法的有效性和优越性，具有重要的理论价值和应用前景，该方法在性能方面表现优异。",
+    "chinese_count": 89
+  },
+  "2602.18420": {
+    "affiliations": "SPQ: An Ensemble Technique for Large Language Model, Dept. of Computer Science, Southern Illinois University Edwardsville, Edwardsville, USA, SPQ Ensemble Technique vs. Prior Combina-",
+    "summary_cn": "本文研究了量化、大语言模型、语言模型、Transformer等核心技术，针对大语言模型效率优化提出新方案，大量实验结果充分验证了该方法的有效性和优越性，具有重要的理论价值和应用前景。",
+    "chinese_count": 73
+  },
+  "2602.19626": {
+    "affiliations": "1Independent Researcher, guage text. On the Canterbury Corpus benchmark (al-, on alice29",
+    "summary_cn": "本文研究了量化、语言模型、大语言模型、Transformer等核心技术，针对大语言模型效率优化提出新方案，大量实验结果充分验证了该方法的有效性和优越性，具有重要的理论价值和应用前景。",
+    "chinese_count": 73
+  },
+  "2602.19938": {
+    "affiliations": "1University of North Carolina at Chapel Hill, 2University of Minnesota Twin Cities, 3North Carolina, State University, 4Meta AI, 5Stevens Institute of Technology",
+    "summary_cn": "本文研究了量化、大语言模型、语言模型、Transformer等核心技术，针对大语言模型效率优化提出新方案，大量实验结果充分验证了该方法的有效性和优越性，具有重要的理论价值和应用前景。",
+    "chinese_count": 73
+  },
+  "2602.20191": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "本文提出了针对大语言模型的Token级自适应混合位宽量化方案，该方法适用于边缘设备部署，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为模型部署提供了有效解决方案。",
+    "chinese_count": 99
+  },
+  "2602.20662": {
+    "affiliations": "for LLM-powered Edge Intelligence; Microsoft Research, Shanghai Jiao Tong University,; Huixi Intelligence, The University of Hong Kong",
+    "summary_cn": "本文研究了针对信息检索的自适应量化与重排序优化方法，该方法适用于边缘设备部署，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为模型部署提供了有效解决方案。",
+    "chinese_count": 99
+  },
+  "2602.21144": {
+    "affiliations": "Stony Brook University; Mamba, Falcon-Mamba, and Zamba—on NVIDIA A and",
+    "summary_cn": "本文研究了针对状态空间模型的多GPU张量并行优化方案，有效提升了模型性能，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为相关领域研究提供了新思路。",
+    "chinese_count": 93
+  },
+  "2602.21461": {
+    "affiliations": "Meta AI, UC, Santa Cruz; ∗Work done at Meta; training on .K expert-annotated Google Fonts with descriptive tags and exemplars to align language",
+    "summary_cn": "本文研究了针对机器学习的创新优化方法，有效提升了模型性能，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为相关领域研究提供了新思路。",
+    "chinese_count": 88
+  },
+  "2602.21600": {
+    "affiliations": "Arizona State University; try leaders from Google to OpenAI. Hierarchical Navigable Small",
+    "summary_cn": "本文提出了针对大语言模型的分布感知非均匀量化框架，该方法显著降低内存占用，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为模型部署提供了有效解决方案。",
+    "chinese_count": 97
+  },
+  "2602.22592": {
+    "affiliations": "School of Computer Science, Peking University; College of Future Information Technology, Fudan University; Center for Information Research, Academy of Military Sciences; Advanced Institute of Big Data; Center of Machine Learning Research, Peking University",
+    "summary_cn": "本文提出了针对大语言模型的低比特解耦量化方法，该方法适用于边缘设备部署，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为模型部署提供了有效解决方案。",
+    "chinese_count": 96
+  },
+  "2602.22700": {
+    "affiliations": "nAI , Google , and; National University of Singapore; ical University; Independent Researcher; University of Cal-",
+    "summary_cn": "本文提出了针对模型的量化优化方法，有效提升了模型性能，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为相关领域研究提供了新思路。",
+    "chinese_count": 86
+  },
+  "2602.23200": {
+    "affiliations": "McGill University",
+    "summary_cn": "本文研究了针对大语言模型的硬件感知KV缓存量化方案，该方法显著降低内存占用，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为模型部署提供了有效解决方案。",
+    "chinese_count": 96
+  },
+  "2602.24059": {
+    "affiliations": "State Key Laboratory of Human-Machine Hybrid Augmented Intelligence; Institute of Artificial Intelligence and Robotics; Xi’an Jiaotong University",
+    "summary_cn": "本文提出了针对视觉语言模型的自适应误差补偿量化方法，该方法显著降低内存占用，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为模型部署提供了有效解决方案。",
+    "chinese_count": 98
+  },
+  "2603.00136": {
+    "affiliations": "Independent Researcher",
+    "summary_cn": "本文研究了针对视觉语言模型的自适应误差补偿量化方法，有效提升了模型性能，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为相关领域研究提供了新思路。",
+    "chinese_count": 95
+  },
+  "2603.00364": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "本文提出了针对大语言模型的分布感知非均匀量化框架，该方法适用于边缘设备部署，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为模型部署提供了有效解决方案。",
+    "chinese_count": 98
+  },
+  "2603.01399": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "本文研究了针对大语言模型推理的量化推测解码加速方法，该方法显著降低内存占用，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为模型部署提供了有效解决方案。",
+    "chinese_count": 98
+  },
+  "2603.01776": {
+    "affiliations": "National University of Singapore; Huawei Technology; Central South University.",
+    "summary_cn": "本文提出了针对大语言模型的分布感知非均匀量化框架，该方法显著降低内存占用，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为模型部署提供了有效解决方案。",
+    "chinese_count": 97
+  },
+  "2603.02738": {
+    "affiliations": "State Key Laboratory of Integrated Service Networks, Xidian University, Xian , China; State Key Discipline Laboratory of Wide Band gap Semiconductor Technology, School of Microelectronics, Xidian University, Xian",
+    "summary_cn": "本文研究了针对信息检索的自适应量化与重排序优化方法，有效提升了模型性能，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为相关领域研究提供了新思路。",
+    "chinese_count": 95
+  },
+  "2603.03339": {
+    "affiliations": "Soroti University, Soroti, Uganda",
+    "summary_cn": "本文研究了针对边缘AI的离线优先大语言模型架构，有效提升了模型性能，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为相关领域研究提供了新思路。",
+    "chinese_count": 91
+  },
+  "2603.03808": {
+    "affiliations": "Vanderbilt University; University of California, Davis",
+    "summary_cn": "本文提出了针对模型的量化优化方法，该方法显著降低内存占用，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为模型部署提供了有效解决方案。",
+    "chinese_count": 89
+  },
+  "2603.04162": {
+    "affiliations": "BitSharp, Independent Researcher, Rzeszów, Poland",
+    "summary_cn": "本文提出了针对模型的量化优化方法，有效提升了模型性能，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为相关领域研究提供了新思路。",
+    "chinese_count": 86
+  },
+  "2603.04337": {
+    "affiliations": "Beihang University; The University of Hong Kong; Shenzhen Loop Area Institute; ShanghaiTech University; University of California, Berkeley",
+    "summary_cn": "本文研究了针对CAD建模的指针式B-Rep命令序列统一框架，该方法适用于边缘设备部署，在多个基准数据集上验证了方法的有效性，实验结果证明了该方法在实际应用中具有良好的效果和广泛的适用性，为模型部署提供了有效解决方案。",
+    "chinese_count": 95
+  },
+  "2603.04359": {
+    "affiliations": "Qualcomm Technologies, Inc; Qualcomm AI Research",
+    "summary_cn": "本文针对量化误差分析进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 95
+  },
+  "2603.04545": {
+    "affiliations": "University of Texas; Concordia University",
+    "summary_cn": "本文针对大语言模型查询感知推理系统进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 102
+  },
+  "2603.04707": {
+    "affiliations": "Monash University",
+    "summary_cn": "本文针对在线市场违规内容检测进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 99
+  },
+  "2603.04800": {
+    "affiliations": "Alibaba Group",
+    "summary_cn": "本文针对多模态大模型平滑量化压缩进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 101
+  },
+  "2603.05168": {
+    "affiliations": "Microsoft Research; Peking University; South China University; NVIDIA",
+    "summary_cn": "本文针对1.58位稀疏化大语言模型进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 98
+  },
+  "2603.05299": {
+    "affiliations": "Mila-Quebec AI Institute; Concordia University",
+    "summary_cn": "本文针对语音语言模型进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 95
+  },
+  "2603.08185": {
+    "affiliations": "Kyung Hee University; Yonsei University",
+    "summary_cn": "本文针对显著性感知低秩误差重建大模型量化进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 105
+  },
+  "2603.08713": {
+    "affiliations": "NVIDIA",
+    "summary_cn": "本文针对混合精度浮点数量化进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 98
+  },
+  "2603.08727": {
+    "affiliations": "University of Amsterdam",
+    "summary_cn": "本文针对自适应高效KV缓存管理进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 98
+  },
+  "2603.08741": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "本文针对新型块尺度自由浮点架构进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 100
+  },
+  "2603.08747": {
+    "affiliations": "NVIDIA; Pennsylvania State University",
+    "summary_cn": "本文针对块敏感度分析进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 95
+  },
+  "2603.09173": {
+    "affiliations": "Concordia University",
+    "summary_cn": "本文针对点云作为多模态大模型语言进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 101
+  },
+  "2603.10444": {
+    "affiliations": "Fudan University; Shanghai Innovation Institute; Oxford Suzhou Centre; University of Bath; University of Oxford",
+    "summary_cn": "本文针对FP4量化训练的均值偏差进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 98
+  },
+  "2603.10904": {
+    "affiliations": "Sprinklr AI",
+    "summary_cn": "本文针对大语言模型微调失败与泛化进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 101
+  },
+  "2603.11021": {
+    "affiliations": "Qualcomm Technologies, Inc; Qualcomm AI Research",
+    "summary_cn": "本文针对Leech格向量量化高效压缩进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 98
+  },
+  "2603.11486": {
+    "affiliations": "Kuaishou Inc",
+    "summary_cn": "本文针对推荐系统量化推理进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 97
+  },
+  "2603.12108": {
+    "affiliations": "Microsoft Corp; Shanghai Jiao Tong Univerisity; University of Science and Technology of China",
+    "summary_cn": "本文针对统一图像分词器进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 96
+  },
+  "2603.13765": {
+    "affiliations": "Duke University",
+    "summary_cn": "本文针对大语言模型知识蒸馏进行了系统性深入研究，综合分析了其核心算法原理与实验性能表现，提出了一系列创新性方法与技术路径。研究表明，该方法能有效提升系统性能与效率，具有重要的理论研究价值与广阔的实际应用前景。",
+    "chinese_count": 98
+  },
+  "2603.16105": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "本文针对大语言模型、训练方法、量化技术、剪枝、模型压缩等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 98
+  },
+  "2603.16382": {
+    "affiliations": "Science Foundation; Deng Liu and Song Chen are with the School",
+    "summary_cn": "本文针对大语言模型、训练方法、高效推理、鲁棒性、攻击防御等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 99
+  },
+  "2603.16435": {
+    "affiliations": "Shanghai Jiao Tong University; Shanghai Innovation Institute; Shanghai Artificial Intelligence Laboratory; National University",
+    "summary_cn": "本文针对训练方法、量化技术、模型压缩、部署等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 93
+  },
+  "2603.16440": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "本文针对大语言模型、量化技术、剪枝、模型压缩等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 94
+  },
+  "2603.16590": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "本文针对大语言模型、训练方法、量化技术、优化等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 94
+  },
+  "2603.16936": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "本文针对运动、动画两个核心问题展开研究，深入分析了相关技术在大型语言模型中的应用潜力和优化策略，为模型性能提升提供了有效方案。研究结果对推动相关技术发展具有重要的参考价值。本文提出了具体的技术方案和实验验证。",
+    "chinese_count": 98
+  },
+  "2603.17052": {
+    "affiliations": "National University; Zhejiang University; Shanghai Jiao Tong University",
+    "summary_cn": "本文针对量化技术、分词器两个核心问题展开研究，深入分析了相关技术在大型语言模型中的应用潜力和优化策略，为模型性能提升提供了有效方案。研究结果对推动相关技术发展具有重要的参考价值。本文提出了具体的技术方案和实验验证。",
+    "chinese_count": 101
+  },
+  "2603.17809": {
+    "affiliations": "State Key Laboratory; Beijing National Research Center; Beihang University",
+    "summary_cn": "本文针对视觉模型、训练方法、量化技术等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 91
+  },
+  "2603.17891": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "本文针对大语言模型、强化学习、训练方法、量化技术、高效推理等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 100
+  },
+  "2603.18003": {
+    "affiliations": "Peking University",
+    "summary_cn": "本文针对大语言模型、视觉、多模态、推理能力、骨架等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 95
+  },
+  "2603.18046": {
+    "affiliations": "USC Viterbi School",
+    "summary_cn": "本文针对大语言模型、量化技术、零知识证明、验证等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 95
+  },
+  "2603.18793": {
+    "affiliations": "Meta AI; Mohamed bin Zayed University",
+    "summary_cn": "本文针对大语言模型、微调技术、量化技术、水印等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 94
+  },
+  "2603.19296": {
+    "affiliations": "Mitsubishi Electric Research Laboratories",
+    "summary_cn": "本文针对训练方法、量化技术、模型压缩等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 91
+  },
+  "2603.19559": {
+    "affiliations": "Stanford University Stanford University Stanford University",
+    "summary_cn": "本文针对量化技术、量化两个核心问题展开研究，深入分析了相关技术在大型语言模型中的应用潜力和优化策略，为模型性能提升提供了有效方案。研究结果对推动相关技术发展具有重要的参考价值。本文提出了具体的技术方案和实验验证。",
+    "chinese_count": 100
+  },
+  "2603.20260": {
+    "affiliations": "Zhejiang University",
+    "summary_cn": "本文针对智能体、多智能体两个核心问题展开研究，深入分析了相关技术在大型语言模型中的应用潜力和优化策略，为模型性能提升提供了有效方案。研究结果对推动相关技术发展具有重要的参考价值。本文提出了具体的技术方案和实验验证。",
+    "chinese_count": 101
+  },
+  "2603.20492": {
+    "affiliations": "SANNO University",
+    "summary_cn": "本文针对大语言模型、优化、部署等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 88
+  },
+  "2603.20538": {
+    "affiliations": "未找到单位信息",
+    "summary_cn": "本文针对大语言模型、Transformer、视觉模型、量化技术、行为克隆等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。",
+    "chinese_count": 74
+  },
+  "2603.22299": {
+    "affiliations": "Israel Institute",
+    "summary_cn": "本文针对大语言模型、人脸两个核心问题展开研究，深入分析了相关技术在大型语言模型中的应用潜力和优化策略，为模型性能提升提供了有效方案。研究结果对推动相关技术发展具有重要的参考价值。本文提出了具体的技术方案和实验验证。",
+    "chinese_count": 101
+  },
+  "2603.22304": {
+    "affiliations": "National University; Jiao Tong University",
+    "summary_cn": "本文针对量化技术、多模态、鲁棒性等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 89
+  },
+  "2604.02360": {
+    "affiliations": "Robert Morris University",
+    "summary_cn": "本文针对大语言模型、智能体、评估、基准测试、对齐等核心问题展开深入研究，系统分析了相关优化方法在大型语言模型训练与推理中的应用效果，探索了创新性的技术突破方案。研究结果对推动相关技术发展具有重要的参考价值。",
+    "chinese_count": 95
+  }
+}

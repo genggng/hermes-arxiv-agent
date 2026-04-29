@@ -31,6 +31,10 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Inject Cloudflare Analytics token
+        run: |
+          sed -i "s/__CF_TOKEN_PLACEHOLDER__/${{ secrets.CF_ANALYTICS_TOKEN }}/" viewer/index.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

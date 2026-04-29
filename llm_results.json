@@ -1,0 +1,42 @@
+{
+  "2604.03044": {
+    "arxiv_id": "2604.03044",
+    "title": "JoyAI-LLM Flash: Advancing Mid-Scale LLMs with Token Efficiency",
+    "authors": "Aichen Cai, Anmeng Zhang, Anyu Li, Bo Zhang, Bohua Cai, Chang Li, Changjian Jiang, Changkai Lu, Chao Xue, Chaocai Liang, Cheng Zhang, Dongkai Liu, Fei Wang, Guoqiang Huang, Haijian Ke, Han Lin, Hao Wang, Ji Miao, Jiacheng Zhang, Jialong Shi, Jifeng Zhu, Jingjing Qian, Junhui Luo, Junwu Xiong, Lam So, Liang Huang, Ming Ke, Mingyang Li, Panfeng Shi, Peng Hao, Qi Wang, Qian Lai, Qiaoqiao Yuan, Qingyu Yin, Qiong Cao, Qixiang Wang, Rongcheng Bian, Rongduo Han, Shaoqiang Zheng, Shi Hu, Shi Suo, Shijie Ren, Shijin Zhang, Shiying Fan, Shuai Xie, Tianyi Zhang, Wei Liu, Wentao Tan, Xianghan Meng, Xiaodong He, Xing Pan, Xiran Wang, Xuyang Peng, Ya Zhang, Yang Liu, Yangyang Duan, Yanxu Chen, Yicheng Gong, Yidan Huang, Yifei Liu, Yinhao Bai, Yongqiang Liu, Yuesong Zhang, Yuqi Zhang, Zerui Xie, Zhenfang Wang, Zhennan Shen, Zheyuan Liu, Zhuwei Zeng",
+    "affiliations": "JD.com",
+    "published_date": "2026-04-03",
+    "pdf_url": "https://arxiv.org/pdf/2604.03044",
+    "pdf_local_path": "/home/wsg/hermes_path/hermes-arxiv-agent/papers/2604.03044.pdf",
+    "summary_cn": "提出JoyAI-LLM Flash，一种高效的MoE大模型，总参数量48B，前向激活仅2.7B参数，通过FiberPO强化学习算法在信任域维护中引入全局-局部分解，实现思考与非思考认知模式的灵活切换。采用MTP多Token预测与QAT量化感知训练协同设计，在18个基准上达到领先token效率，8K输入/16K输出场景下相比GLM-4.7-Flash和Qwen3-30B-A3B分别实现1.45×和1.07×加速。已在Hugging Face开源模型权重。"
+  },
+  "2604.03057": {
+    "arxiv_id": "2604.03057",
+    "title": "Querying Structured Data Through Natural Language Using Language Models",
+    "authors": "Hontan Valentin-Micu, Bunea Andrei-Alexandru, Tantaroudas Nikolaos Dimitrios, Popovici Dan-Matei",
+    "affiliations": "National University of Science and Technology POLITEHNICA Bucharest; Institute of Communication and Computer Systems (ICCS), Athens, Greece",
+    "published_date": "2026-04-03",
+    "pdf_url": "https://arxiv.org/pdf/2604.03057",
+    "pdf_local_path": "/home/wsg/hermes_path/hermes-arxiv-agent/papers/2604.03057.pdf",
+    "summary_cn": "提出一种通过自然语言查询结构化数据集的开源方法，解决RAG在处理数值型和高度结构化信息时的不足。采用合成训练数据生成管道生产多样化问答对，对DeepSeek R1 Distill 8B模型进行QLoRA 4-bit微调，使其可在普通硬件上部署。在Durangaldea西班牙地区基本服务可达性数据集上，单语、多语及未见位置场景均达高精度，验证了小规模领域模型在该任务上的有效性。"
+  },
+  "2604.04013": {
+    "arxiv_id": "2604.04013",
+    "title": "RUQuant: Towards Refining Uniform Quantization for Large Language Models",
+    "authors": "Han Liu, Haotian Gao, Changya Li, Feng Zhang, Xiaotong Zhang, Wei Wang, Hong Yu",
+    "affiliations": "Dalian University of Technology; Peking University; Macao Polytechnic University",
+    "published_date": "2026-04-05",
+    "pdf_url": "https://arxiv.org/pdf/2604.04013",
+    "pdf_local_path": "/home/wsg/hermes_path/hermes-arxiv-agent/papers/2604.04013.pdf",
+    "summary_cn": "针对大模型后训练量化中激活值非均匀分布导致精度下降的问题，从Lloyd-Max最优性条件理论出发，识别出最优量化点偏离区间中点的核心原因。提出两阶段正交变换方法RUQuant：第一阶段用Householder反射和Givens旋转构造的正交矩阵对激活分块映射；第二阶段微调全局Householder反射进一步减小量化误差。13B模型在W6A6量化下达99.8%全精度精度，W4A4达97%，无需微调，一分钟内完成。"
+  },
+  "2604.04356": {
+    "arxiv_id": "2604.04356",
+    "title": "REAM: Merging Improves Pruning of Experts in LLMs",
+    "authors": "Saurav Jha, Maryam Hashemzadeh, Ali Saheb Pasand, Ali Parviz, Min-Joong Lee, Boris Knyazev",
+    "affiliations": "Mila–Quebec AI Institute; Polytechnique Montréal; Université de Montréal; McGill University; AI Center, Samsung, South Korea; Samsung AI Lab, Montreal",
+    "published_date": "2026-04-06",
+    "pdf_url": "https://arxiv.org/pdf/2604.04356",
+    "pdf_local_path": "/home/wsg/hermes_path/hermes-arxiv-agent/papers/2604.04356.pdf",
+    "summary_cn": "REAM通过合并专家权重而非删除专家来压缩MoE大模型，优于传统的REAP剪枝方法。在多个MoE模型、多选问答和生成基准上的实验表明，MC与GEN性能之间存在由校准数据配比决定的权衡关系。通过控制通用、数学和代码数据的混合比例，可探索该权衡的Pareto前沿，在多数情况下REAM超越基线，且与原始未压缩模型性能相当。"
+  }
+}
