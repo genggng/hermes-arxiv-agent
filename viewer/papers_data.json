@@ -1,10 +1,38 @@
 {
-  "count": 229,
+  "count": 231,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-04-30",
+  "crawled_date_max": "2026-05-02",
   "published_date_min": "2026-01-16",
-  "published_date_max": "2026-04-29",
+  "published_date_max": "2026-04-30",
   "papers": [
+    {
+      "arxiv_id": "2604.27491",
+      "title": "Uni-HOI:A Unified framework for Learning the Joint distribution of Text and Human-Object Interaction",
+      "authors": "Mengfei Zhang, Jinlu Zhang, Zhigang Tu",
+      "affiliations": "Wuhan University; Peking University",
+      "published_date": "2026-04-30",
+      "categories": "cs.CV",
+      "abstract": "Modeling 4D human-object interaction (HOI) is a compelling challenge in computer vision and an essential technology powering virtual and mixed-reality applications. While existing works have achieved promising results on specific HOI tasks-such as text-conditioned HOI generation and human motion generation from object motion, they typically rely on task-specific architectures and lack a unified framework capable of handling diverse conditional inputs. Building on this, we propose Uni-HOI, a unified framework that learns the joint distribution among text, human motion, and object motion. By leveraging large language models (LLMs) and two motion-specific vector quantized variational autoencoders (VQ-VAEs), we convert heterogeneous motion data into token sequences compatible with LLM inputs, enabling seamless integration and joint modeling of all three modalities. We introduce a two-stage training strategy: the first stage performs multi-task learning on a large-scale HOI dataset to capture the underlying correlations among the three modalities, while the second stage fine-tunes the model on specific tasks to further enhance performance. Extensive experiments demonstrate that Uni-HOI achieves remarkable performances on multiple HOI-related tasks including text-driven HOI generation, object motion-driven human motion generation (optionally with text) and human motion-driven object motion prediction within a unified framework.",
+      "summary_cn": "Uni-HOI提出统一框架建模文本、人体运动与物体运动的联合分布。利用LLM与两个VQ-VAE将运动数据转为token序列，经两阶段训练实现文本驱动HOI生成、物体运动驱动人体运动等多项任务，单一框架在多个HOI基准上超越专用方法。",
+      "pdf_filename": "2604.27491.pdf",
+      "crawled_date": "2026-05-02",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2604.27491"
+    },
+    {
+      "arxiv_id": "2604.27396",
+      "title": "VitaLLM: A Versatile, Ultra-Compact Ternary LLM Accelerator with Dependency-Aware Scheduling",
+      "authors": "Zi-Wei Lin, Tian-Sheuan Chang",
+      "affiliations": "National Yang Ming Chiao Tung University, Taiwan",
+      "published_date": "2026-04-30",
+      "categories": "cs.AR",
+      "abstract": "Deploying Large Language Models (LLMs) on resource-constrained edge devices faces critical bottlenecks in memory bandwidth and power consumption. While ternary quantization (e.g., BitNet b1.58) significantly reduces model size, its direct deployment on general-purpose hardware is hindered by workload imbalance, bandwidth-bound decoding, and strict data dependencies. To address these challenges, we propose \\textbf{VitaLLM}, a hardware-software co-designed accelerator tailored for efficient ternary LLM inference. We introduce a heterogeneous \\textbf{Dual-Core Compute Strategy} that synergizes specialized TINT-Cores for massive ternary projections with a unified BoothFlex-Core for mixed-precision attention, ensuring high utilization across both compute-bound prefill and bandwidth-bound decode stages. Furthermore, we develop a \\textbf{Leading One Prediction (LOP)} mechanism to prune redundant Key-Value (KV) cache fetches and a \\textbf{Dependency-Aware Scheduling} framework to hide the latency of nonlinear operations. Implemented in TSMC 16nm technology, VitaLLM achieves a decoding throughput of 70.70 tokens/s within an ultra-compact area of 0.223 mm$^2$ and a power consumption of 65.97 mW. The design delivers a superior Figure of Merit (FOM) of 17.4 TOPS/mm$^2$/W, significantly outperforming state-of-the-art accelerators. Finally, we explore an extended bit-serial design (BoothFlex-BS) to demonstrate the architecture's adaptability for precision-agile inference.",
+      "summary_cn": "VitaLLM提出软硬件协同设计的三元LLM加速器，采用TINT-Core与BoothFlex-Core异构双核策略适配预填充与解码阶段，设计领先位预测减少KV缓存访问。在TSMC 16nm下以0.223mm²面积达70.70 tokens/s解码速度，能效比17.4 TOPS/mm²/W，显著优于现有方案。",
+      "pdf_filename": "2604.27396.pdf",
+      "crawled_date": "2026-05-02",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2604.27396"
+    },
     {
       "arxiv_id": "2604.26378",
       "title": "CoQuant: Joint Weight-Activation Subspace Projection for Mixed-Precision LLMs",
