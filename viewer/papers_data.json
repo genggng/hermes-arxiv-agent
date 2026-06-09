@@ -1,10 +1,38 @@
 {
-  "count": 365,
+  "count": 367,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-06-06",
+  "crawled_date_max": "2026-06-09",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2606.07116",
+      "title": "OffQ: Taming Structured Outliers in LLM Quantization by Offsetting",
+      "authors": "Haoqi Wang, Lorenz K. Mueller, Jiawei Zhuang, Mathieu Salzmann, Lukas Cavigelli",
+      "affiliations": "School of Computer and Communication Sciences, EPFL; Huawei, Switzerland; Swiss Data Science Center, ETHZ & EPFL",
+      "published_date": "2026-06-05",
+      "categories": "cs.LG, cs.AI, cs.CL",
+      "abstract": "Low-bit quantization has been widely adopted to accelerate the inference of large language models (LLMs) by significantly reducing computational cost and memory usage. However, activation outliers pose a major challenge to effective quantization, often leading to notable performance degradation. In this paper, we introduce OffQ, a method designed to mitigate activation outliers in low-bit quantization through a novel offsetting mechanism. Specifically, OffQ first identifies a low-dimensional outlier subspace in the activations using a proposed top-1 PCA, and then concentrates high-magnitude activations into 1 channel via rotation. OffQ then absorbs this concentrated outlier channel by converting its magnitude into a shared offset, thereby reducing the standard deviation of the activations. This offsetting strategy enables effective W4A4KV4 quantization of LLMs using deployment-friendly uniform-grid and uniform-precision quantization. Extensive experiments across diverse LLM architectures and benchmarks demonstrate that OffQ outperforms state-of-the-art baselines, consistently improving model accuracy while preserving low-bit efficiency.",
+      "summary_cn": "针对低比特量化中激活值结构化异常值难以处理的问题，OffQ提出偏移吸收机制：先通过top-1 PCA识别低维异常子空间，经旋转将高幅值激活集中到单一通道，再利用Hadamard旋转将异常通道能量转化为组间偏移量并入量化零点。该方法无需混合精度或非均匀量化，在多种LLM架构上实现W4A4KV4均匀量化，显著优于现有基线。",
+      "pdf_filename": "2606.07116.pdf",
+      "crawled_date": "2026-06-09",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2606.07116"
+    },
+    {
+      "arxiv_id": "2606.06547",
+      "title": "FAIR-Calib: Frontier-Aware Instability-Reweighted Calibration for Post-Training Quantization of Diffusion Large Language Models",
+      "authors": "Haoyu Huang, Linlin Yang, Sheng Xu, Boyu Liu, Guodong Guo, Zhongqian Fu, Hang Zhou, Baochang Zhang",
+      "affiliations": "National College for Excellent Engineers, Beihang University; State Key Laboratory of Media Convergence and Communication, Communication University of China; Independent researcher; School of Artificial Intelligence, Beihang University; Ningbo Institute of Digital Twin, Eastern Institute of Technology; Huawei Noah's Ark Lab; Artificial Intelligence Research Center, Lobachevsky State University",
+      "published_date": "2026-06-04",
+      "categories": "cs.LG, cs.AI",
+      "abstract": "Diffusion Large Language Models (dLLMs) refine tokens iteratively but commit them irreversibly, leading to a \"stability lag\" where early decisions remain fragile even after being written. We reveal that Post-Training Quantization (PTQ) error easily flips these borderline decisions at the write frontier, which are then permanently locked in and amplified. To address this, we propose Frontier-Aware Instability-Reweighted Calibration (FAIR-Calib), a two-stage PTQ framework for dLLMs. Stage I probes a full-precision teacher to estimate a position prior that combines frontier hits and masked-stage reliability. Stage II performs off-policy, layer-wise calibration by minimizing a reweighted hidden-state MSE, effectively prioritizing the protection of fragile frontier states without requiring expensive end-to-end diffusion rollouts. We further theoretically justify our weighted objective as a surrogate for output KL divergence. Empirically, FAIR-Calib consistently outperforms state-of-the-art baselines on LLaDA and Dream (W4A4), significantly reducing frontier decision flips and suppressing post-commit mismatches across diverse benchmarks.",
+      "summary_cn": "针对扩散大语言模型（dLLM）的量化部署难题，本文揭示了PTQ误差在不可逆写入边界处翻转脆弱决策并逐级放大的机制，提出FAIR-Calib两阶段框架。阶段一通过全精度教师模型探测位置先验，融合边界命中率与掩码阶段可靠性；阶段二利用加权隐态MSE进行离策略逐层校准，优先保护脆弱边界状态。在LLaDA和Dream上实现W4A4量化，显著减少决策翻转和提交后误差放大。",
+      "pdf_filename": "2606.06547.pdf",
+      "crawled_date": "2026-06-09",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2606.06547"
+    },
     {
       "arxiv_id": "2606.03764",
       "title": "RamanGPT: Bidirectional Mapping Between Crystal Structures and Raman Spectra with Graph Neural Networks and Generative Transformers",
