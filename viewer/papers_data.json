@@ -1,10 +1,24 @@
 {
-  "count": 403,
+  "count": 404,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-06-24",
+  "crawled_date_max": "2026-06-25",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2606.24169",
+      "title": "Data Scale, Not Latency, Shapes Cross-Lingual Encoder Transfer in Streaming ASR",
+      "authors": "Nenad Banfic",
+      "affiliations": "Microsoft",
+      "published_date": "2026-06-23",
+      "categories": "cs.AI",
+      "abstract": "Adapting a streaming speech recognition model to a new language requires choosing between two plausible warm starts: a multilingual (ML) encoder or an English-only (EN) encoder. The common intuition is that the multilingual encoder should help most at low data, but it is unclear how long that advantage persists, whether tight streaming latency amplifies it, and whether it survives deployment quantization. We answer these questions with a controlled sweep of a 0.6 B-parameter cache-aware FastConformer transducer across eight European languages, up to five target-language data scales (100 h to 2500 h), three streaming tiers plus offline decoding, and up to four public test sets. The main result is that multilingual initialization is a data-limited advantage, not a latency-limited one. On FLEURS at 160 ms, the mean EN-ML word error rate (WER) gap falls from +4.21 percentage points (pp) at 100 h to +0.20 pp at 2500 h; a power-law fit summarizes this decay, with each doubling of target-language data roughly halving the remaining advantage. Across the three streaming tiers, the across-language mean EN-ML gap is approximately stable at each scale from 100 to 1000 h, and is near zero by 2500 h. Finally, 4-bit weight-only encoder quantization at the matched 560 ms streaming tier reduces the encoder footprint by about 3x, with an average FLEURS WER increase of about 0.5 pp. The resulting guideline is simple: use multilingual initialization in low-data regimes, treat the choice as effectively irrelevant at large data, and make latency and quantization decisions independently.",
+      "summary_cn": "比较多语言与纯英语编码器初始化对流式ASR跨语言迁移的影响。使用0.6B参数FastConformer在8种欧洲语言、100-2500小时数据规模下进行系统实验。核心发现：多语言编码器的优势受限于数据量而非延迟，呈幂律衰减（数据每翻倍优势约减半），2500小时数据量级差距基本消失。4位权重量化将编码器体积缩小约3倍，WER平均仅增加约0.5个百分点。",
+      "pdf_filename": "2606.24169.pdf",
+      "crawled_date": "2026-06-25",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2606.24169"
+    },
     {
       "arxiv_id": "2606.23406",
       "title": "HyperQuant: A Rate-Distortion-Optimal Quantization Pipeline for Large Language and Diffusion Models",
@@ -230,7 +244,7 @@
       "pdf_url": "https://arxiv.org/pdf/2606.17118"
     },
     {
-      "arxiv_id": "2606.15980",
+      "arxiv_id": "2606.1598",
       "title": "Do Safety Monitors Stay Reliable After an Update? Benchmarking and Predicting Activation-Monitor Staleness",
       "authors": "Evan Duan",
       "affiliations": "University of Michigan",
@@ -241,7 +255,7 @@
       "pdf_filename": "2606.15980.pdf",
       "crawled_date": "2026-06-17",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2606.15980"
+      "pdf_url": "https://arxiv.org/pdf/2606.1598"
     },
     {
       "arxiv_id": "2606.15652",
@@ -356,7 +370,7 @@
       "pdf_url": "https://arxiv.org/pdf/2606.11244"
     },
     {
-      "arxiv_id": "2606.10890",
+      "arxiv_id": "2606.1089",
       "title": "Optimal Post-Training Quantization Scales and Where to Find Them",
       "authors": "Juan Amboage, Pablo Monteagudo-Lago, Ian Colbert, Giuseppe Franco, Nicholas Fraser",
       "affiliations": "AMD",
@@ -367,7 +381,7 @@
       "pdf_filename": "2606.10890.pdf",
       "crawled_date": "2026-06-11",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2606.10890"
+      "pdf_url": "https://arxiv.org/pdf/2606.1089"
     },
     {
       "arxiv_id": "2606.10531",
@@ -384,7 +398,7 @@
       "pdf_url": "https://arxiv.org/pdf/2606.10531"
     },
     {
-      "arxiv_id": "2606.10520",
+      "arxiv_id": "2606.1052",
       "title": "UniSVQ: 2-bit Unified Scalar-Vector Quantization",
       "authors": "Haoyu Wang, Haiyan Zhao, Xingyu Yu, Zhangyang Yao, Xu Han, Zhiyuan Liu, Maosong Sun",
       "affiliations": "Tsinghua University (Department of Computer Science and Technology); Peking University (School of Software and Microelectronics); Beihang University (School of Physics)",
@@ -395,7 +409,7 @@
       "pdf_filename": "2606.10520.pdf",
       "crawled_date": "2026-06-11",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2606.10520"
+      "pdf_url": "https://arxiv.org/pdf/2606.1052"
     },
     {
       "arxiv_id": "2606.10327",
@@ -678,7 +692,7 @@
       "pdf_url": "https://arxiv.org/pdf/2606.04945"
     },
     {
-      "arxiv_id": "2606.04620",
+      "arxiv_id": "2606.0462",
       "title": "QuBLAST: A Framework for Quantizing Large Language Models with Block-Level Compression Approach and Activation Scaling Strategy",
       "authors": "Pasindu Wickramasinghe, Achyuta Muthuvelan, Rachmad Vidya Wicaksana Putra, Minghao Shao, Muhammad Shafique",
       "affiliations": "New York University Abu Dhabi",
@@ -689,7 +703,7 @@
       "pdf_filename": "2606.04620.pdf",
       "crawled_date": "2026-06-04",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2606.04620"
+      "pdf_url": "https://arxiv.org/pdf/2606.0462"
     },
     {
       "arxiv_id": "2606.04349",
@@ -748,7 +762,7 @@
       "pdf_url": "https://arxiv.org/pdf/2606.04063"
     },
     {
-      "arxiv_id": "2606.04050",
+      "arxiv_id": "2606.0405",
       "title": "LiftQuant: Continuous Bit-Width LLM via Dimensional Lifting and Projection",
       "authors": "Liulu He, XuanAng Liu, Juntao Liu, Taolue Feng, Ting Lu, Chu",
       "affiliations": "Nanjing University; China Mobile Research Institute; Xiaomi Corporation; University of Arizona",
@@ -759,7 +773,7 @@
       "pdf_filename": "2606.04050.pdf",
       "crawled_date": "2026-06-04",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2606.04050"
+      "pdf_url": "https://arxiv.org/pdf/2606.0405"
     },
     {
       "arxiv_id": "2606.03458",
@@ -776,7 +790,7 @@
       "pdf_url": "https://arxiv.org/pdf/2606.03458"
     },
     {
-      "arxiv_id": "2606.03330",
+      "arxiv_id": "2606.0333",
       "title": "FLIPS: Instance-Fingerprinting for LLMs via Pseudo-random Sequences",
       "authors": "Gurvan Richardeau, Gohar Dashyan, Erwan Le Merrer, Gilles Tr",
       "affiliations": "未找到单位信息",
@@ -787,7 +801,7 @@
       "pdf_filename": "2606.03330.pdf",
       "crawled_date": "2026-06-04",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2606.03330"
+      "pdf_url": "https://arxiv.org/pdf/2606.0333"
     },
     {
       "arxiv_id": "2606.03002",
