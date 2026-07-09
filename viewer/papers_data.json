@@ -1,10 +1,38 @@
 {
-  "count": 428,
+  "count": 430,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-07-08",
+  "crawled_date_max": "2026-07-09",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2607.05832",
+      "title": "BaCon: Efficient Batch Processing of Counting Queries [Full Version]",
+      "authors": "Yuxi Liu, Xiao Hu, Pankaj K. Agarwal, Jun Yang",
+      "affiliations": "Duke University; University of Waterloo",
+      "published_date": "2026-07-07",
+      "categories": "cs.DB",
+      "abstract": "Counting queries are ubiquitous in database systems, particularly for driving internal system optimization. Learned models for cardinality estimation rely heavily on large-scale training data, yet generating such data by executing massive batches of counting queries is expensive. We propose BaCon, an efficient algorithm for batch evaluation of counting queries on top of a database system, without modifying its internals. BaCon integrates the idea of factorized databases with a workload-aware domain quantization strategy, allowing it to evaluate batches of counting queries using compact data structures rather than materializing massive join results. BaCon's design is compatible with most database management system, and we have implemented it as a client-side application on PostgreSQL with a lightweight C-language UDF (user-defined function). This implementation delivers speedups between 2$\\times$ and 178$\\times$ over baselines and good performance across various workloads, making training and maintenance of learned cardinality estimation models significantly more practical.",
+      "summary_cn": "本文提出BaCon算法，用于高效批处理数据库计数查询。该算法融合因子化数据库思想与工作负载感知的域量化策略，在不修改数据库内部的前提下利用紧凑数据结构替代大规模连接结果物化。在PostgreSQL上以C语言UDF实现客户端应用，相比基线方法实现2至178倍加速，使学习型基数估计模型的训练维护更加高效实用。",
+      "pdf_filename": "2607.05832.pdf",
+      "crawled_date": "2026-07-09",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2607.05832"
+    },
+    {
+      "arxiv_id": "2607.05475",
+      "title": "Is Your NPU Ready for LLMs? Dissecting the Hidden Efficiency Bottlenecks in Mobile LLM Inference",
+      "authors": "Guanyu Cai, Ruiming Tian, Lang Yang, Zhouhong Ren, Jinliang Yuan, Lingkun Li, Jiliang Wang",
+      "affiliations": "Tsinghua University; Beijing Jiaotong University",
+      "published_date": "2026-07-06",
+      "categories": "cs.AR, cs.AI",
+      "abstract": "Deploying Large Language Models (LLMs) on mobile devices enhances privacy and reduces latency, but is severely bottlenecked by hardware inefficiency. We present the first comprehensive, cross-layer measurement study of mobile LLM inference, uniquely spanning five mainstream frameworks (e.g., llama.cpp, GENIE) and three hardware backends (CPU, GPU, NPU). To enable this analysis, we develop PowerBench, a fine-grained profiling tool that provides the first backend-specific energy attribution, moving beyond traditional device-level measurements. Our study yields three critical insights: (1) Framework-induced performance gaps are substantially amplified on NPUs, reaching up to 10x using custom operators due to divergent offloading and quantization strategies. (2) We identify a distinct phase split where NPUs excel at compute-bound prefilling, while CPUs outperform all other backends in memory-bound decoding. This is driven by the NPU's preference for large, fixed-shape workloads, which conflicts with the small-kernel, dynamic nature of decoding. (3) Backend-specific profiling uncovers substantial scheduling headroom missed by prior work. Suboptimal thread configurations, uncoordinated NPU sleep latencies, and CPU polling intervals result in up to 40% energy waste. Leveraging these findings, we present an energy-oriented best-practice configuration for mobile LLM inference. We estimate that this configuration could reduce energy consumption by up to 54.8% on the NPU backend across three datasets.",
+      "summary_cn": "本文首次对移动端大模型推理进行跨层测量分析，覆盖llama.cpp等五个推理框架和CPU/GPU/NPU三种硬件后端。开发了PowerBench细粒度能耗分析工具，揭示了三大关键发现：框架差异在NPU上可放大至10倍；NPU在前缀填充阶段表现优异但CPU在解码阶段更优；调度策略不当导致最高40%的能耗浪费。基于优化建议可将NPU后端能耗降低54.8%。",
+      "pdf_filename": "2607.05475.pdf",
+      "crawled_date": "2026-07-09",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2607.05475"
+    },
     {
       "arxiv_id": "2607.03688",
       "title": "PathMark: Protecting Intellectual Property of Mixture-of-Expert LLMs via Path Watermarks",
