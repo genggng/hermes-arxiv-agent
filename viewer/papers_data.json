@@ -1,10 +1,24 @@
 {
-  "count": 430,
+  "count": 431,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-07-09",
+  "crawled_date_max": "2026-07-10",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2607.07494",
+      "title": "GIFT: Geometry-Informed Low-precision Gradient Communication for LLM Pretraining",
+      "authors": "Jieying Wang, Shuyuan Fan, Mingkai Zheng, Zhao Zhang",
+      "affiliations": "Department of Computer Science, Rutgers University; Department of Electrical and Computer Engineering, Rutgers University",
+      "published_date": "2026-07-08",
+      "categories": "cs.DC, cs.LG",
+      "abstract": "Gradient communication is a primary scaling bottleneck in large language model (LLM) pretraining. Communicating gradients in low-precision formats, such as FP8 and NVFP4, can significantly reduce the communication volume. Existing methods quantize gradients via linear or nonlinear mappings in Euclidean space, often degrading model performance because highly anisotropic gradients incur direction-dependent distortion. We present GIFT, a geometry-informed gradient scaling method that performs low-precision communication in geometry-aware coordinates. By transforming gradients into a near-isotropic space before quantization, GIFT makes low-precision representations substantially more faithful to their high-precision counterparts. GIFT only changes the coordinate system used for low-precision gradient communication and does not change the optimizer, training recipe, communication collective, or low-precision format. We also develop a simplified geometry-aware transformation algorithm with low-rank approximation and selective application to balance the computation overhead and communication reduction. We examine the empirical convergence of GIFT using Llama-300M and Llama-600M models. Our results show that GIFT reduces the end-to-end pretraining time of Llama-600M by 7.6% on 64 NVIDIA GH200 Superchips, while improving the downstream task preservation profile over direct Euclidean FP8 communication under the same optimizer and communication path.",
+      "summary_cn": "GIFT提出一种几何感知的梯度缩放方法，将梯度变换至近似各向同性的空间后再进行FP8/NVFP4低精度通信，避免欧氏空间中各向异性梯度导致的量化失真。基于K-FAC局部几何近似，通过低秩近似和选择性应用平衡计算开销。在Llama-600M模型和64块GH200上实现7.6%端到端训练加速，并提升下游任务保持能力。",
+      "pdf_filename": "2607.07494.pdf",
+      "crawled_date": "2026-07-10",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2607.07494"
+    },
     {
       "arxiv_id": "2607.05832",
       "title": "BaCon: Efficient Batch Processing of Counting Queries [Full Version]",
