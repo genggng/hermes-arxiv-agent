@@ -1,10 +1,24 @@
 {
-  "count": 436,
+  "count": 437,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-07-11",
+  "crawled_date_max": "2026-07-14",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2607.08993",
+      "title": "StreamDQ: Near-Memory Weight DeQuantization in Custom HBM for Scalable AI Inference Acceleration",
+      "authors": "Minki Jeong, Daegun Yoon, Soohong Ahn, Seungyong Lee, Nameun Kang, Hyeonseok Ju, Ieryung Park, Joonseop Sim, Youngpyo Joo, Hoshik Kim",
+      "affiliations": "SK Hynix",
+      "published_date": "2026-07-09",
+      "categories": "cs.AR",
+      "abstract": "As large language models (LLMs) scale, their memory and computation demands have grown substantially, making weight-only quantization a widely adopted technique for reducing model size with minimal accuracy loss. However, on current GPUs, CUDA-core-based dequantization introduces substantial instruction overhead, on-chip traffic, and pipeline stalls, making it a major bottleneck for high-throughput, cloud-scale LLM serving. To address these limitations, we propose StreamDQ, a lightweight architectural enhancement that enables on-the-fly dequantization in the memory subsystem for high-throughput, large-batch LLM inference. StreamDQ integrates compact DeQuantization Blocks (DQBs) into the base die of high-bandwidth memory (HBM) and performs inline dequantization on standard memory loads. A lightweight sideband tag on each memory read request selects the dequantization mode while preserving conventional load semantics. By relocating dequantization to the memory side, StreamDQ eliminates GPU-side CUDA-core-based dequantization, thereby reducing on-chip traffic on the GPU and avoiding extra HBM write-back and reload of dequantized weights at large batch sizes. Our evaluation shows that StreamDQ achieves up to 7.08$\\times$ speedup and 90.23\\% lower energy for mixed-precision GEMM, with only 0.127\\,mm$^2$ area and 0.355\\,W power overhead per DQB in a 12\\,nm CMOS process. For end-to-end LLM inference, StreamDQ reduces latency by up to 54.68\\% and improves decode throughput by up to 2.20$\\times$.",
+      "summary_cn": "针对LLM推理中GPU端CUDA核心反量化带来的指令开销和流水线停顿问题，提出StreamDQ架构，在HBM基底die中集成紧凑反量化块（DQB），实现内存侧在线反量化。通过旁路标签选择反量化模式，消除GPU端反量化和片上流量。评估显示混合精度GEMM加速达7.08倍、能耗降低90.23%，端到端LLM推理延迟减少54.68%、解码吞吐提升2.20倍。",
+      "pdf_filename": "2607.08993.pdf",
+      "crawled_date": "2026-07-14",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2607.08993"
+    },
     {
       "arxiv_id": "2607.08734",
       "title": "The Illusion of Equivalency: Statistical Characterization of Quantization Effects in LLMs",
