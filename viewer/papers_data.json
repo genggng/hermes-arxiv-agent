@@ -1,10 +1,38 @@
 {
-  "count": 441,
+  "count": 443,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-07-15",
+  "crawled_date_max": "2026-07-17",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2607.13093",
+      "title": "Efficient and Privacy Aware Edge Cloud Collaborative Inference for Large Language Models",
+      "authors": "Yi Li, Chen Li, Jiexiong Liu",
+      "affiliations": "KunlunMeta",
+      "published_date": "2026-07-14",
+      "categories": "cs.CR, cs.AI",
+      "abstract": "On-device LLM inference faces a trilemma of response latency, limited hardware resources and user privacy. Full cloud inference delivers strong computing power but exposes user prompts and dialogue data, while standalone on-device inference is unfeasible for most consumer and embedded edge devices. This paper presents a privacy-centric edge-cloud collaborative LLM inference framework built on endpoint-authenticated KV cache. Local endpoints handle input preprocessing, embedding computation, adaptive feature optimization, KV cache authentication, speculative decoding and low-dimensional model head calculation, while the cloud conducts authenticated decoder inference, KV cache management, token verification and high-dimensional vocabulary projection. Endpoints fuse partial outputs, apply language-adaptive masking and sample target tokens. All transmitted data and truncated logits are quantized and AES-GCM encrypted for privacy, with core lightweight modules, draft parameters and cache access policies kept local to avoid leakage. The framework supports heterogeneous devices including CPU-only, GPU-equipped and embedded devices via optimized streaming, batching and quantized ONNX deployment. Evaluations demonstrate that the framework reduces per-token latency by up to 46.1\\% and downlink payloads by up to 67.4\\% over baseline split inference, retaining comparable performance to full cloud inference.",
+      "summary_cn": "本文提出端云协同LLM推理框架，基于端点授权KV缓存：端侧处理嵌入、推测解码和低维投影，云侧执行解码器和词汇投影。传输数据经量化和AES-GCM加密，LoRA模块和缓存策略留在端侧。实验表明该方法相比朴素拆分推理每token延迟降低46.1%，下行负载降低67.4%，性能接近全云推理。",
+      "pdf_filename": "2607.13093.pdf",
+      "crawled_date": "2026-07-17",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2607.13093"
+    },
+    {
+      "arxiv_id": "2607.13088",
+      "title": "Securing LLMs in the Wild: Privacy and Security Challenges at the Edge",
+      "authors": "Ren-Yi Huang, Mingchen Li, Dumindu Samaraweera, Morris Chang",
+      "affiliations": "University of South Florida; Embry-Riddle Aeronautical University",
+      "published_date": "2026-07-13",
+      "categories": "cs.CR, cs.LG",
+      "abstract": "Large Language Models (LLMs) are rapidly moving from research settings into the wild, deployed on enterprise infrastructure, personal devices, and edge platforms. While cloud deployments offer scalable compute, concerns over data sovereignty, compliance, latency, and third-party dependence are driving organizations toward edge and on-premise LLMs. This shift introduces new security and privacy challenges: limited compute and memory force aggressive optimizations, including quantization, pruning, model partitioning, and parameter-efficient adaptation, each of which can introduce vulnerabilities and reshape the threat landscape. We describe this tension as the Security-Efficiency Paradox, mechanisms that improve efficiency may weaken robustness, expose new attack surfaces, or increase privacy risks. We examine how compression can degrade safety alignment, how partitioned inference enables reconstruction attacks, and how continuous local adaptation may cause privacy leakage and model drift. To analyze these risks, we introduce a deployment-centric taxonomy organized around three architectural constraints: the Memory Wall, the Quadratic Wall, and the Compute Wall. We derive a unified constraint model that quantifies when unsafe optimizations become unavoidable, linking each wall to specific attack surfaces. Building on this model, we propose the Secure Operational Efficiency Score (SOES), a holistic metric balancing task accuracy, jailbreak resistance, and privacy against energy, memory, and latency, enabling practitioners to configure edge LLMs under real-world hardware limits. We further present a practical decision procedure and targeted mitigations for each optimization-induced vulnerability. Together, these contributions provide a co-designed framework for jointly evaluating security, privacy, and efficiency, laying a foundation for securing edge-native intelligent systems.",
+      "summary_cn": "本文针对LLM部署到边缘设备时面临的安全与效率矛盾，系统分析了量化、剪枝、模型拆分和参数高效微调等优化技术如何引入新的攻击面。作者提出三堵墙约束模型（内存墙、二次复杂度墙、计算墙），量化了不安全优化不可避免的条件，并设计了Secure Operational Efficiency Score（SOES）指标，将任务精度、越狱抵抗和隐私保护与能耗、内存和延迟统一权衡，为边缘LLM的安全部署提供了协同评估框架。",
+      "pdf_filename": "2607.13088.pdf",
+      "crawled_date": "2026-07-17",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2607.13088"
+    },
     {
       "arxiv_id": "2607.10855",
       "title": "Reliability Scaling Laws for Quantized Large Language Models",
