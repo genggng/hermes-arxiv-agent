@@ -1,10 +1,24 @@
 {
-  "count": 455,
+  "count": 456,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-07-22",
+  "crawled_date_max": "2026-07-23",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2607.18867",
+      "title": "HindsightBench: A Black-Box Behavioral Audit Protocol for Parametric Hindsight in Time-Indexed LLM Decision Tasks",
+      "authors": "Haozhe Jia",
+      "affiliations": "University College Dublin",
+      "published_date": "2026-07-21",
+      "categories": "cs.LG, cs.CL",
+      "abstract": "Large language models leak parametric knowledge of realized outcomes into historical financial decision tasks. Existence is settled; what users lack is a cheap way to audit a given model for it. We present HindsightBench, a black-box behavioral audit protocol that profiles parametric hindsight in any time-indexed LLM decision task at probe-level cost (no backtests, no logprobs, no corpus access). The protocol chains a four-arm date-manipulation matrix (revealed/date-only/masked/transplanted), dual memory probes (date recovery; outcome recall), and six per-model metrics -- trigger strength, transplant effect, post-cutoff placebo, recoverability, behaviorally effective knowledge cutoff, and a recall-accuracy dissociation coefficient -- with explicit gates where identifiability is data-dependent. Applying it to 15 models from seven vendors on a 258-node vintage-correct macro panel yields three headline patterns: (i) the date-trigger reflex tracks training generation, not scale -- absent across the 2024 open-weight generation from 1B to 70B, present in every tested 2026-generation model, and switching on within one vendor lineage (Qwen3 -> Qwen3.6) at fixed MoE architecture and 3B active parameters; (ii) effective cutoffs span 22 months across vendors and precede vendor-reported dates by up to eight months, invalidating calendar-window placebo designs; (iii) audit results are not invariant to serving -- BF16 serving of an FP8-referenced model breaks the trigger estimate's stability while AWQ-INT4 preserves it, and a provider-locked reasoning regime makes one probe non-convergent -- so the protocol ships with operational requirements (pin quantization and thinking regime; disclose parser and sampling policy). We release the panel, frozen preregistrations, per-model audit rows with measured dollar costs, transcripts, and one-command regeneration.",
+      "summary_cn": "HindsightBench 提出一种黑盒行为审计协议，通过四臂日期操控矩阵和双记忆探针，系统探测大语言模型在时序金融决策任务中的事后偏差。对 7 家厂商 15 个模型的测试发现：日期触发器跟随训练代际而非规模；有效知识截止日期跨厂商相差最多 22 个月；审计结果受推理精度影响，需固定量化策略和推理模式作为基准契约。该协议无需回测和 logprobs，每次审计成本约 19–30 美元。",
+      "pdf_filename": "2607.18867.pdf",
+      "crawled_date": "2026-07-23",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2607.18867"
+    },
     {
       "arxiv_id": "2607.18081",
       "title": "SelectInfer: Selective Neuron Loading and Computation for On-Device LLMs",
