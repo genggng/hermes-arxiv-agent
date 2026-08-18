@@ -1,10 +1,38 @@
 {
-  "count": 503,
+  "count": 505,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-08-13",
+  "crawled_date_max": "2026-08-18",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2608.14152",
+      "title": "Towards Efficient Multimodal and Multilingual Opinion Extraction for STI: A QLoRA-Based Fine-Tuning Approach",
+      "authors": "Sheng Hong, Xuanqi Wang, Jiacheng Wang, Yuwei Wang",
+      "affiliations": "School of Cyber Science and Technology, Beihang University; School of Information and Engineering, Nanchang University; Institute of Computing Technology, Chinese Academy of Sciences",
+      "published_date": "2026-08-14",
+      "categories": "cs.AI",
+      "abstract": "Recent advances in large language models (LLMs) have reshaped semantic analysis. Opinion Extraction (OE) for Science and Technology Intelligence (STI) requires concise core opinions from large information streams. Off-the-shelf models struggle to filter noise from these streams and show limited structured-output reliability in zero-shot multilingual and multi-modal settings. To address information overload and extraction defocus, this study proposes a multimodal core-opinion extraction framework in which visual evidence serves as a contextual anchor for textual judgment. Using VideoLLaMA2 (VL2) and VideoLLaMA2.1 (VL2.1) as the base models, we apply Quantized Low-Rank Adaptation (QLoRA) fine-tuning on a curated dataset of 2,194 multilingual and multimodal samples. Under the selected Image-Augmented setting, fine-tuned VL2.1 generates structured JSON core-opinion outputs, achieving 64.98% Precision, 42.15% Recall, 51.14% F1-score, and 74.00% sample-level accuracy. Relative to the zero-shot VL2.1 setting, it raises the F1-scores of Spanish and Russian from 4.83% and 0.45% to 46.05% and 51.93%, respectively. The framework further incorporates a Fuzzy Cumulative Prospect Theory-based post-extraction triage module for case-level value assessment, providing a case-level value signal for downstream STI screening.",
+      "summary_cn": "针对科技情报多语言多模态观点提取的信息过载与聚焦不足，提出以视觉证据为上下文锚点的核心观点提取框架：基于VideoLLaMA2/2.1，用QLoRA在2194条四语样本上微调，输出结构化JSON观点，精确率64.98%、F1达51.14%；西语与俄语F1由4.83%、0.45%提升至46.05%、51.93%，并引入模糊CPT模块评估案例价值。",
+      "pdf_filename": "2608.14152.pdf",
+      "crawled_date": "2026-08-18",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2608.14152"
+    },
+    {
+      "arxiv_id": "2608.13966",
+      "title": "QUASAR: Lowering the Loss Floor of Quantization-Aware Training with Loss-Aware Reconstruction",
+      "authors": "Vincent Counathe, Ben Athiwaratkun, Christopher De Sa, Tianyi Zhang",
+      "affiliations": "Cornell University; Together AI",
+      "published_date": "2026-08-14",
+      "categories": "cs.LG, cs.CL, stat.ML",
+      "abstract": "As large language model inference shifts toward lower precision, post-training quantization (PTQ) becomes increasingly brittle, making quantization-aware training (QAT) essential for preserving model quality. However, QAT computes the loss and surrogate gradients using a lossy reconstruction of latent full-precision weights, while applying updates to the latent weights themselves. This mismatch can lead to suboptimal training trajectories and a higher loss floor. Second-order PTQ methods mitigate a similar gap by minimizing loss-aware reconstruction error, but doing it once for a frozen model can take hours; repeating this process throughout QAT as the weights evolve is impractical. We introduce QUASAR, a QAT method that continuously performs lightweight, loss-aware reconstruction in the training loop to lower the loss floor and improve the resulting low-bit model. At each training step, QUASAR uses the exponential moving average of squared gradients as online saliency estimates, searches over a small set of clipping ranges, and fits affine dequantizers via saliency-weighted least squares. Our analysis shows that the loss-aware reconstruction error is the only reconstruction-dependent term in the QAT convergence bound and controls the loss of the final quantized model, establishing QUASAR's objective as a principled optimization target. QUASAR modifies only the training procedure and supports standard deployment formats, including integer quantization and NVFP4, with no inference-time changes or overhead. Across Qwen3 and Llama-3.1, QUASAR achieves the lowest held-out KL divergence among competitive QAT methods at 2, 3, and 4 bits, reducing KL by at least 10% at 3 and 4 bits and by 29% at 2 bits. At 2 bits, it improves average accuracy across eight tasks by 3.5-4.3 percentage points over strong QAT and PTQ baselines.",
+      "summary_cn": "QUASAR提出在量化感知训练中持续进行轻量级损失感知重构以降低损失下限：利用梯度平方的指数滑动平均作为在线显著性估计，搜索裁剪范围并拟合仿射反量化器。在Qwen3与Llama-3.1上，2/3/4比特下均取得最低KL散度，2比特KL降低29%，八任务平均准确率提升3.5-4.3个百分点，且推理阶段零额外开销。",
+      "pdf_filename": "2608.13966.pdf",
+      "crawled_date": "2026-08-18",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2608.13966"
+    },
     {
       "arxiv_id": "2608.12018",
       "title": "Poly-Dialectal Neural Machine Translation System for Bangla Regional Dialects",
