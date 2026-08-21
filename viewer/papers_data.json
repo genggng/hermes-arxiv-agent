@@ -1,10 +1,38 @@
 {
-  "count": 512,
+  "count": 514,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-08-19",
+  "crawled_date_max": "2026-08-21",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2608.18578",
+      "title": "Compress and Forget: bitsandbytes Quantization Amplifies Proactive Interference in LLMs",
+      "authors": "Shayan Shahrabi-Farahani, Dara Rahmati",
+      "affiliations": "Shahid Beheshti University, Tehran, Iran",
+      "published_date": "2026-08-19",
+      "categories": "cs.CL, cs.LG",
+      "abstract": "Proactive interference (PI) is a documented failure mode in large language models in which retrieval of a repeatedly overwritten value degrades as prior overwrites accumulate, mirroring a classical phenomenon in human working memory. Post-training quantization (PTQ) is now the default deployment path for open-weight models, yet its effect on this failure mode has not been tested. We evaluate three precision levels (FP16, INT8, INT4/NF4, via bitsandbytes) across three architecturally distinct instruction-tuned models (Qwen2.5-7B-Instruct, Mistral-7B-Instruct-v0.3, Phi-3.5-mini-instruct), holding the retrieval task fixed. INT4 quantization significantly reduces accuracy under high interference in every model (e.g., from 81.0% to 68.3% for Qwen), confirmed by paired McNemar's tests ($p \\le 2.6 \\times 10^{-6}$) and a mixed-effects regression spanning all interference levels; INT8, often assumed safe, also carries a smaller but real penalty in two of three models. The effect is specific to semantically similar (word-type) distractors and reverses sign under a numeric control condition, and is mechanistically linked to a rise in same-key intrusion errors under INT4 (from 21.5% to 24.6% of trials, $p = 4.8 \\times 10^{-7}$). A follow-up ablation shows the effect originates in the quantized transformer backbone rather than the output projection layer. These results suggest that bitsandbytes 4-bit quantization can impose an additional cost on applications relying on long, updatable, semantically dense contexts, even when aggregate benchmark accuracy appears largely unaffected. We release our code and tokenizer-verified vocabulary construction method at https://github.com/ShayanShahrabi/compress-and-forget",
+      "summary_cn": "该研究首次检验后训练量化对LLM前摄干扰失效模式的影响：用bitsandbytes在FP16、INT8、INT4/NF4三种精度下测试Qwen2.5-7B、Mistral-7B与Phi-3.5-mini三个指令微调模型的检索任务。结果显示INT4量化在高干扰场景显著降低准确率（Qwen从81.0%降至68.3%，McNemar检验p≤2.6×10⁻⁶），INT8在三分之二的模型中也带来较小但真实的损失；机制上源于同键侵入错误增加，且效应源于量化后的Transformer主干而非输出投影层。",
+      "pdf_filename": "2608.18578.pdf",
+      "crawled_date": "2026-08-21",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2608.18578"
+    },
+    {
+      "arxiv_id": "2608.18182",
+      "title": "Efficient INT8 Inference of Small NLP Models on Server CPUs with PyTorch Native Stack",
+      "authors": "Weiwen Xia, Yuxin Cui, E Cao",
+      "affiliations": "Intel Corporation",
+      "published_date": "2026-08-18",
+      "categories": "cs.CL",
+      "abstract": "Small NLP models, especially BERT-family encoders, remain important in industrial workloads such as classification, ranking, and retrieval even in the era of large language models. On server CPUs, INT8 quantization offers an attractive latency-throughput-cost trade-off, but users increasingly expect such acceleration to be available directly in the native PyTorch stack. We integrate SmoothQuant into TorchAO and optimize the resulting inference path for Intel Xeon CPUs through graph-level fusion in TorchInductor and efficient INT8 GEMM kernel selection across oneDNN-, AVX512_VNNI-, and AMX-based implementations. Across BERT, DistilBERT, and XLM-RoBERTa benchmarks, the approach delivers up to 5.8x end-to-end throughput speedup with negligible---and in some cases no measurable---accuracy loss relative to the FP32 baseline. We also validated our work by detailed performance analysis with roofline models. The implementation has been upstreamed to PyTorch and TorchAO, enabling out-of-the-box deployment with native PyTorch tooling",
+      "summary_cn": "该工作将SmoothQuant集成到TorchAO，针对Intel Xeon服务器CPU优化原生PyTorch栈的INT8推理路径：通过TorchInductor图级融合，并在oneDNN、AVX512_VNNI与AMX实现间高效选择INT8 GEMM内核。在BERT、DistilBERT和XLM-RoBERTa基准上，相比FP32基线获得最高5.8倍端到端吞吐加速，精度几乎无损失，并用roofline模型验证了性能分析。实现已合入PyTorch与TorchAO，可直接开箱部署。",
+      "pdf_filename": "2608.18182.pdf",
+      "crawled_date": "2026-08-21",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2608.18182"
+    },
     {
       "arxiv_id": "2608.15919",
       "title": "Noesis: Bidirectional Graph-RAG with Adaptive Parallelism and Cross-Knowledge-Base Semantic Discovery",
