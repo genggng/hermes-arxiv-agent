@@ -1,10 +1,38 @@
 {
-  "count": 514,
+  "count": 516,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-08-21",
+  "crawled_date_max": "2026-08-23",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2608.19758",
+      "title": "FlashPrefill V2: Block-Sparse Prefill Attention for Long-Context LLM Serving",
+      "authors": "Qihang Fan, Huaibo Huang, Zhiying Wu, Bingning Wang, Ran He",
+      "affiliations": "MAIS&NLPR, CASIA; UCAS; WeChat, Tencent",
+      "published_date": "2026-08-20",
+      "categories": "cs.CL",
+      "abstract": "Long-context modeling is a pivotal capability for Large Language Models, yet the quadratic complexity of attention remains a critical bottleneck, particularly during the compute-intensive prefilling phase. Our previous work, FlashPrefill, mitigates this cost through instantaneous pattern discovery and max-based dynamic thresholding; however, it remains an algorithmic prototype that is still distant from production deployment. In this paper, we present FlashPrefill V2, which evolves FlashPrefill from a prototype toward practical long-context serving along three dimensions. First, we introduce a mean correction term that effectively suppresses the approximation error, keeping performance degradation manageable even at extreme sparsity levels. Second, we redesign the sparse attention operator with PackGQA memory access, warp specialization, and pingpong pipelining, fully aligning with the latest FlashAttention-3/4 implementations and supporting FP8 inference to meet practical quantization requirements. Third, FlashPrefill V2 natively supports paged KV cache and continuous batching, allowing integration as an attention backend in modern inference frameworks such as SGLang. Extensive evaluations on NVIDIA H20 GPUs---among the most widely deployed inference accelerators---demonstrate that FlashPrefill V2 delivers up to 47.26x and 27.19x speedups over FlashAttention-2 at 128K context length under FP8 and BF16 precision, respectively, and, in FP8, still achieves a 30.49x speedup against an FA3/4-aligned dense baseline.",
+      "summary_cn": "FlashPrefill V2将稀疏预填充注意力从原型推进至生产部署：引入均值校正项抑制极端稀疏下的近似误差；以PackGQA访存、warp specialization与pingpong流水线重构稀疏算子，对齐FlashAttention-3/4并支持FP8推理；原生支持分页KV缓存与连续批处理，可集成进SGLang等框架。在NVIDIA H20上128K上下文下较FlashAttention-2取得47.26倍（FP8）与27.19倍（BF16）加速。",
+      "pdf_filename": "2608.19758.pdf",
+      "crawled_date": "2026-08-23",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2608.19758"
+    },
+    {
+      "arxiv_id": "2608.19595",
+      "title": "SSR-GRPO: Integrating Supervision and Semantic IDs into Reinforcement Learning for Dense Retrieval in E-commerce",
+      "authors": "Guangxin Song, Xing Fang, Mingmin Jin, Jing Wang, Bokang Wang, Zhentao Song, Junjie Bai, Jianbo Zhu",
+      "affiliations": "Alibaba Group, Hangzhou, China",
+      "published_date": "2026-08-20",
+      "categories": "cs.IR",
+      "abstract": "Embedding-based retrieval (EBR) is pivotal in e-commerce search but often struggles with complex semantics. While recent methods often fine-tune large language models (LLMs) for representation learning, they typically lack robust mechanisms for handling complex and implicit semantics. While Retrieval-GRPO (R-GRPO) recently introduced reinforcement learning to dense retrieval, it suffers from noisy top-K candidates due to limited batch sampling and biased relevance assessments caused by using similarly trained LLMs as reward models. To tackle these issues, we propose Supervised Retrieval-GRPO with Semantic Identifiers (SSR-GRPO). Specifically, our method first proposes a dual-perspective framework for relevance assessment. It leverages both Semantic Identifiers (SIDs) produced by quantization learning and dense representation vectors to generate more unbiased relevance scores. Furthermore, leveraging the hierarchical similarity relationships of the generated SIDs, we mine a set of hard negative samples that serve two purposes: (1) to design a masking function integrated into R-GRPO, effectively filtering intra-group noisy samples; and (2) to construct a Retrieval-DPO task composed of positive and negative sample pairs, enabling the model to capture fine-grained semantic distinctions from a pair-wise perspective. By integrating these optimization strategies, we propose SSR-GRPO. Extensive offline and online experiments validate SSR-GRPO's effectiveness, and it has been deployed on a large-scale e-commerce platform.",
+      "summary_cn": "针对电商检索中R-GRPO存在的噪声样本与奖励偏差问题，本文提出SSR-GRPO：利用量化学习生成的语义标识符（SID）与稠密表示构建双视角相关性评估，并借助SID层次相似性挖掘困难负样本，据此设计掩码函数过滤组内噪声，同时构造Retrieval-DPO任务学习细粒度语义差异。离线和在线实验验证了其有效性，已部署于大规模电商平台。",
+      "pdf_filename": "2608.19595.pdf",
+      "crawled_date": "2026-08-23",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2608.19595"
+    },
     {
       "arxiv_id": "2608.18578",
       "title": "Compress and Forget: bitsandbytes Quantization Amplifies Proactive Interference in LLMs",
