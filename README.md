@@ -31,7 +31,14 @@
 - 由 Hermes/LLM 补全作者单位和中文摘要
 - 自动推送飞书日报
 - 提供静态阅读网站，支持本地运行或 GitHub Pages 发布
+- 可选通过 Hermes Tweet 做 X/Twitter 论文分享、关键词监听和互动跟进
 - 以 Hermes skill 的形式完成部署和日常运行
+
+## 分享与发布
+
+- [小红书分享文案](XIAOHONGSHU_POST.md)
+- [知乎文章模板](ZHIHU_ARTICLE.md)
+- [X/Twitter 分享工作流](X_TWITTER_POST.md)
 
 ## 前提条件
 
