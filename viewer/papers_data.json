@@ -1,10 +1,24 @@
 {
-  "count": 563,
+  "count": 564,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-09-07",
+  "crawled_date_max": "2026-09-08",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2609.04245",
+      "title": "Grounded Decoding for Autoregressive Speech Enhancement via Adaptive Code-Space Grounding and Local LLM Refinement",
+      "authors": "Hao Shi, Yuan Gao, Zhaoheng Ni, Junyi Peng, Gongping Huang, Yu Tsao, Xugang Lu",
+      "affiliations": "Kyoto University; Meta; Brno University of Technology; School of Electronic Information, Wuhan University; Academia Sinica; National Institute of Information and Communications Technology (NICT), Japan",
+      "published_date": "2026-08-21",
+      "categories": "cs.SD, eess.AS",
+      "abstract": "Large language model (LLM)-based autoregressive speech enhancement (SE) produces natural speech using learned clean-speech priors, but may hallucinate content unsupported by the input. Deterministic SE better preserves observation-coupled evidence, yet often retains residual noise or local distortion. We propose an evidence-grounded generative SE framework that uses a deterministic estimate as imperfect evidence. A Whisper-guided DPRNN produces an enhanced waveform, which is blended with the observation and tokenized into a discrete evidence sequence. The evidence conditions an autoregressive clean-speech token generator and is reused during decoding through Code-Space Grounding (CSG), which penalizes candidates according to their Hamming distance in the factorized finite-scalar-quantized (FSQ) space. Because the appropriate grounding strength depends on acoustic difficulty, we introduce SNR-Conditioned CSG (SNR-CSG), which maps a calibrated residual-SNR estimate to an utterance-level strength and constructs an adaptive grounded anchor. Although grounding improves content fidelity, the anchor may retain local acoustic defects inherited from the evidence. Since such defects are predominantly local in the FSQ space, nearby tokens may provide better acoustic realizations without large departures from the observation-supported trajectory. We therefore propose Grounded Neighborhood Refinement with LLM ranking (GNR-LLM). It performs one additional teacher-forced pass conditioned on the grounded-anchor history, intersects the LLM top-$K$ candidates with a local FSQ Hamming neighborhood. Experiments on in-domain, controlled-SNR, and DNS no-reverb conditions show that SNR-CSG provides robust automatic grounding, while GNR-LLM substantially improves low-SNR perceptual quality without sacrificing content fidelity.",
+      "summary_cn": "本文提出证据接地的生成式语音增强框架：先用Whisper引导的DPRNN把确定性增强结果与观测混合并量化为离散证据序列，解码时以码空间接地(CSG)按FSQ汉明距离惩罚脱离证据的候选，并由残差SNR自适应调节接地强度(SNR-CSG)；再提出GNR-LLM在接地锚点邻域内做LLM排序精修，修正证据残留的声学缺陷。实验显示其显著提升低信噪比感知质量，且不牺牲内容保真度。",
+      "pdf_filename": "2609.04245.pdf",
+      "crawled_date": "2026-09-08",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2609.04245"
+    },
     {
       "arxiv_id": "2609.05241",
       "title": "Uncensored Open-weight Models: Redistribution as the Persistence Layer",
