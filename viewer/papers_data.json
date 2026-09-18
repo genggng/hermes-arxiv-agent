@@ -1,10 +1,38 @@
 {
-  "count": 590,
+  "count": 592,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-09-17",
+  "crawled_date_max": "2026-09-18",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2609.18005",
+      "title": "A Calibrated Instrument for Measuring How Inference Optimizations Affect Output Quality",
+      "authors": "Jerry Kaplan",
+      "affiliations": "Stanford University",
+      "published_date": "2026-09-16",
+      "categories": "cs.CL, cs.LG",
+      "abstract": "Large language model optimization is an active research area, spanning quantization of model weights, early-exit methods for skipping layers, and speculative decoding. Each track uses its own quality measures, typically an idiosyncratic benchmark score. Few approach the measurement precision required by other scientific disciplines.   We propose a rigorous methodology for measuring output quality, suitable for cross-system and cross-technique comparison. We score outputs with an LLM as a judge, but calibrate the judge formally: we compare its scores on two ordinary runs of a model given the same prompts, verifying that it shows no systematic preference between statistically equivalent outputs and measuring its per-sample noise. Each design also includes a 'null' condition, provably identical in distribution to the unmodified model, whose measured difference must be zero.   With this one instrument we measure several acceleration techniques on the same prompts, so their quality costs can be compared. Perceived quality proves highly dependent on the domain of discourse. A 4-bit model was indistinguishable from its 16-bit original down to our design's +/-0.3-point resolution, in English prose and Chinese alike. At 3-bit precision the same prompts lost 0.5 points in English prose, 0.9 in Chinese, and 1.1 on multi-step math; early exit that cost 0.7 points on prose cost 2.5 on math, cutting correctly solved problems from 19 of 27 to 6. The pattern held for models from Alibaba and from Meta, but not its magnitude: the same quantizer cost Meta's model 1.8 points where it cost Alibaba's 0.7.   A model's certainty about a token predicts how likely it is to differ from the full model's choice, but not how much that difference affects judged quality, so acceptance rules relying on certainty cannot distinguish errors that matter from errors that don't.",
+      "summary_cn": "提出跨系统、跨技术比较输出质量的严格测量方法：以LLM为评判者并形式化校准，用同一提示两次运行的评分检验系统性偏好与逐样本噪声，并设分布等同原模型的零假设条件以暴露设计缺陷。测得4比特与16比特在±0.3分内不可区分，3比特在中文与多步数学上损失更大；提前退出使数学正确题从27题中19题降至6题。",
+      "pdf_filename": "2609.18005.pdf",
+      "crawled_date": "2026-09-18",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2609.18005"
+    },
+    {
+      "arxiv_id": "2609.17995",
+      "title": "QuanText: Protecting Dataset-Level Secrets in Textual Data Sharing",
+      "authors": "Shuaiqi Wang, Zinan Lin, Giulia Fanti",
+      "affiliations": "Carnegie Mellon University; Microsoft Research",
+      "published_date": "2026-09-16",
+      "categories": "cs.LG, cs.CR",
+      "abstract": "Natural-language datasets support many downstream applications and research studies, but releasing text can reveal sensitive global properties of the underlying data source, such as the proportion of records associated with a particular gender, diagnosis, or political stance. Existing work has largely focused on property inference attacks that recover such global properties, while defenses for protecting these dataset-level secrets remain limited. Differential privacy, although effective for protecting individual records, provides only weak protection for aggregate properties. We propose Randomized Quantization for Text (QuanText), a training-free and large-language-model-agnostic data release mechanism that protects global secrets in textual datasets while preserving data utility. Given a dataset-level secret, such as the proportion of records with a particular diagnosis, and attributes whose utility should be preserved, such as topic and sentiment, QuanText perturbs both the secret distribution and the distributions of correlated attributes. It does so by constructing candidate release distributions over secret and non-secret attributes, randomly selecting a candidate sufficiently close to the private empirical distribution, and rewriting each private text sample to match the selected distribution using attribute-related snippets from the original text. QuanText is inspired by the Statistic Maximal Leakage (SML) framework, which bounds leakage about a secret function of a data distribution. Under idealized conditions, we show that QuanText satisfies an SML guarantee. Since these conditions may not hold exactly in practice, we also evaluate QuanText empirically on real-world datasets. Our results show that QuanText achieves a better empirical privacy-utility trade-off than competing data generation baselines.",
+      "summary_cn": "提出免训练、与具体模型无关的文本数据发布机制QuanText，保护数据集级全局秘密（如患病比例）。它基于统计最大泄漏框架，为秘密属性及需保留效用的相关属性构造候选发布分布，随机选取与私有经验分布足够接近者，再由LLM用原文片段重写样本；理论上满足SML保证，真实数据上隐私-效用权衡优于既有生成基线。",
+      "pdf_filename": "2609.17995.pdf",
+      "crawled_date": "2026-09-18",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2609.17995"
+    },
     {
       "arxiv_id": "2609.16689",
       "title": "Efficient Quantization-Aware Distillation with Cross-Modal Alignment for Edge Vision-Language Models",
@@ -202,7 +230,7 @@
       "pdf_url": "https://arxiv.org/pdf/2609.10439"
     },
     {
-      "arxiv_id": "2609.11940",
+      "arxiv_id": "2609.1194",
       "title": "The Battery Price of edge AI: A study of the Environmental Impact of LLM Inference on Mobile Devices",
       "authors": "Édouard Guégain, Tristan Coignion",
       "affiliations": "DRI, GREENSPECTOR; Univ. Bordeaux, CNRS, Bordeaux INP, LaBRI, UMR 5800, Talence, France",
@@ -213,7 +241,7 @@
       "pdf_filename": "2609.11940.pdf",
       "crawled_date": "2026-09-14",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2609.11940"
+      "pdf_url": "https://arxiv.org/pdf/2609.1194"
     },
     {
       "arxiv_id": "2609.09085",
@@ -342,7 +370,7 @@
       "pdf_url": "https://arxiv.org/pdf/2609.06473"
     },
     {
-      "arxiv_id": "2609.06330",
+      "arxiv_id": "2609.0633",
       "title": "Beyond QA Matching: Perturbation-Response Fingerprinting via Probability Distributions for Large Language Models",
       "authors": "Jichao Zeng, Yanli Chen, Hanzhou Wu",
       "affiliations": "Guizhou Normal University; Shanghai University",
@@ -353,7 +381,7 @@
       "pdf_filename": "2609.06330.pdf",
       "crawled_date": "2026-09-09",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2609.06330"
+      "pdf_url": "https://arxiv.org/pdf/2609.0633"
     },
     {
       "arxiv_id": "2609.06161",
@@ -454,7 +482,7 @@
       "pdf_url": "https://arxiv.org/pdf/2609.03369"
     },
     {
-      "arxiv_id": "2609.02780",
+      "arxiv_id": "2609.0278",
       "title": "ShallowStream: Index Shallow then Answer Deep for Streaming Video Understanding",
       "authors": "Jitai Hao, Ke Yang, Qiang Huang, Jun Yu",
       "affiliations": "Harbin Institute of Technology (Shenzhen)",
@@ -465,7 +493,7 @@
       "pdf_filename": "2609.02780.pdf",
       "crawled_date": "2026-09-04",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2609.02780"
+      "pdf_url": "https://arxiv.org/pdf/2609.0278"
     },
     {
       "arxiv_id": "2609.02553",
@@ -566,7 +594,7 @@
       "pdf_url": "https://arxiv.org/pdf/2609.00562"
     },
     {
-      "arxiv_id": "2609.00450",
+      "arxiv_id": "2609.0045",
       "title": "HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference",
       "authors": "Chun-Ting Chen, Dongmin Han, Hangyeol Mun, Jake Hyun, Arnab Raha, Amit Agarwal, Mark Anders, Mohamed Abdelfattah, Jae-sun Seo",
       "affiliations": "Cornell University; Intel Corporation",
@@ -577,7 +605,7 @@
       "pdf_filename": "2609.00450.pdf",
       "crawled_date": "2026-09-03",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2609.00450"
+      "pdf_url": "https://arxiv.org/pdf/2609.0045"
     },
     {
       "arxiv_id": "2609.00442",
@@ -664,7 +692,7 @@
       "pdf_url": "https://arxiv.org/pdf/2608.30564"
     },
     {
-      "arxiv_id": "2608.30510",
+      "arxiv_id": "2608.3051",
       "title": "Lot Machine: Multimodal Lot Extraction from Auction Catalogs",
       "authors": "Mathias Zinnen, Alisha Mund, Sabine Lang, Lukas Hüttner, Thomas Gorges, Vincent Christlein",
       "affiliations": "Pattern Recognition Lab, FAU Erlangen; Department of Digital Humanities and Social Studies, FAU Erlangen",
@@ -675,7 +703,7 @@
       "pdf_filename": "2608.30510.pdf",
       "crawled_date": "2026-09-02",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2608.30510"
+      "pdf_url": "https://arxiv.org/pdf/2608.3051"
     },
     {
       "arxiv_id": "2608.30439",
@@ -902,7 +930,7 @@
       "pdf_url": "https://arxiv.org/pdf/2608.24173"
     },
     {
-      "arxiv_id": "2608.24070",
+      "arxiv_id": "2608.2407",
       "title": "Compression Trinity: Exploring Sparsity, Quantization, and Low-Rank Approximations for LLM Compression",
       "authors": "Mohammad Mozaffari",
       "affiliations": "Department of Computer Science, University of Toronto",
@@ -913,7 +941,7 @@
       "pdf_filename": "2608.24070.pdf",
       "crawled_date": "2026-08-27",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2608.24070"
+      "pdf_url": "https://arxiv.org/pdf/2608.2407"
     },
     {
       "arxiv_id": "2608.23843",
@@ -1504,7 +1532,7 @@
       "pdf_url": "https://arxiv.org/pdf/2608.03867"
     },
     {
-      "arxiv_id": "2608.03480",
+      "arxiv_id": "2608.0348",
       "title": "Efficient Multilingual Neural Machine Translation via Corpus-Driven Vocabulary Pruning: An English-Arabic Case Study",
       "authors": "Ahmed Amine Aliane, Nasredine Semmar, Hassina Aliane",
       "affiliations": "Arabic Institute for Translation, Algiers, Algeria; CEA LIST, Paris-Saclay, France; CERIST, Algeria",
@@ -1515,7 +1543,7 @@
       "pdf_filename": "2608.03480.pdf",
       "crawled_date": "2026-08-06",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2608.03480"
+      "pdf_url": "https://arxiv.org/pdf/2608.0348"
     },
     {
       "arxiv_id": "2608.03276",
@@ -1588,7 +1616,7 @@
       "pdf_url": "https://arxiv.org/pdf/2608.01631"
     },
     {
-      "arxiv_id": "2608.01460",
+      "arxiv_id": "2608.0146",
       "title": "Conformalized Large Language Models under Configuration Shift",
       "authors": "Yuqicheng Zhu, Jialin Yu, Lin Li, Gengyuan Zhang, Zhen Yang, Steffen Staab, Puneet Dokania, Philip Torr, Jie Tang, Evgeny Kharlamov",
       "affiliations": "University of Stuttgart; Robert Bosch GmbH; University of Oxford; LMU Munich; Tsinghua University; University of Southampton; University of Oslo",
@@ -1599,7 +1627,7 @@
       "pdf_filename": "2608.01460.pdf",
       "crawled_date": "2026-08-05",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2608.01460"
+      "pdf_url": "https://arxiv.org/pdf/2608.0146"
     },
     {
       "arxiv_id": "2608.01343",
@@ -1742,7 +1770,7 @@
       "pdf_url": "https://arxiv.org/pdf/2607.26515"
     },
     {
-      "arxiv_id": "2607.25180",
+      "arxiv_id": "2607.2518",
       "title": "Bekko Embedding: Parameter-Efficient Multilingual Retrieval with Ultra-Compact Encoders",
       "authors": "Yuichi Tateno",
       "affiliations": "未找到单位信息",
@@ -1753,7 +1781,7 @@
       "pdf_filename": "2607.25180.pdf",
       "crawled_date": "2026-07-30",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2607.25180"
+      "pdf_url": "https://arxiv.org/pdf/2607.2518"
     },
     {
       "arxiv_id": "2607.24953",
@@ -1994,7 +2022,7 @@
       "pdf_url": "https://arxiv.org/pdf/2607.15865"
     },
     {
-      "arxiv_id": "2607.15810",
+      "arxiv_id": "2607.1581",
       "title": "QUADS: Stabilizing NVFP4 Reinforcement Learning for MoE via QUantization-error Alignment across Dual Sides",
       "authors": "Zhengyang Zhuge, Hao Yu, Xin Wang, Zheng Li, Yizhong Cao, Dayiheng Liu, Jianwei Zhang",
       "affiliations": "Qwen Team, Alibaba Inc.",
@@ -2005,7 +2033,7 @@
       "pdf_filename": "2607.15810.pdf",
       "crawled_date": "2026-07-21",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2607.15810"
+      "pdf_url": "https://arxiv.org/pdf/2607.1581"
     },
     {
       "arxiv_id": "2607.14661",
@@ -2022,7 +2050,7 @@
       "pdf_url": "https://arxiv.org/pdf/2607.14661"
     },
     {
-      "arxiv_id": "2607.14630",
+      "arxiv_id": "2607.1463",
       "title": "Cross-Layer Error Compensation and Finite-Sample Feature-Statistics Matching for Extreme Low-Bit Quantization of Large Language Models",
       "authors": "Ryona Noda",
       "affiliations": "未找到单位信息",
@@ -2033,7 +2061,7 @@
       "pdf_filename": "2607.14630.pdf",
       "crawled_date": "2026-07-18",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2607.14630"
+      "pdf_url": "https://arxiv.org/pdf/2607.1463"
     },
     {
       "arxiv_id": "2607.14506",
