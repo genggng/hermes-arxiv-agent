@@ -1,10 +1,24 @@
 {
-  "count": 592,
+  "count": 593,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-09-18",
+  "crawled_date_max": "2026-09-19",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2609.20807",
+      "title": "Score Centering Stabilizes Off-policy Reinforcement Learning",
+      "authors": "Martin Marek, Max Ryabinin",
+      "affiliations": "Together AI",
+      "published_date": "2026-09-17",
+      "categories": "cs.LG",
+      "abstract": "Reinforcement learning (RL) of large language models is notoriously sensitive to small differences between training and inference engines, often referred to as the training-inference mismatch (TIM). However, completely eliminating TIM is impractical, as it would come at a major cost to rollout efficiency. In this paper, we show that the instability of RL under TIM is primarily caused by drift: a persistent bias between training and inference engines that accumulates with every training step. We derive an additive \"score centering\" correction term that stabilizes RL under TIM by canceling drift. When training models from 0.6B to 30B parameters, score centering alone matches or outperforms methods based on importance sampling under quantization, with the gap growing as the mismatch becomes more severe. Because the correction is additive, score centering also composes with importance sampling -- their composition outperforms pure importance-sampling baselines in our staleness experiments.",
+      "summary_cn": "论文指出大模型RL训练与推理引擎不匹配(TIM)引发的不稳定，根源是随训练步累积的持久偏差drift。作者推导出加性score centering修正项，通过分数中心化抵消drift。在0.6B至30B模型上，该方法即可匹配或超越量化下的重要性采样基线，失配越严重优势越大，且可与重要性采样组合获得进一步增益。",
+      "pdf_filename": "2609.20807.pdf",
+      "crawled_date": "2026-09-19",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2609.20807"
+    },
     {
       "arxiv_id": "2609.18005",
       "title": "A Calibrated Instrument for Measuring How Inference Optimizations Affect Output Quality",
