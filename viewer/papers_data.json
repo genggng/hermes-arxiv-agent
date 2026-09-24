@@ -1,10 +1,38 @@
 {
-  "count": 605,
+  "count": 607,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-09-23",
+  "crawled_date_max": "2026-09-24",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2609.25492",
+      "title": "RGSQ: Riemannian Geometry-Sensitive Quantization for Large Vision-Language Models",
+      "authors": "Zhiping Wu, Dongdong Ren, Yangchengyu Zhou, Zhengjie Zhang, Wenbin Li, Hongbing Pan, Yang Gao",
+      "affiliations": "School of Electronic Science and Engineering, Nanjing University; Geely Automobile Research Institute (Ningbo) Co., Ltd.; State Key Laboratory for Novel Software Technology and School of Intelligence Science and Technology, Nanjing University, Suzhou Campus",
+      "published_date": "2026-09-21",
+      "categories": "cs.CV, cs.AI",
+      "abstract": "Large vision-language models (VLMs) can be efficiently deployed under stringent memory and latency constraints through post training quantization (PTQ). However, most PTQ methods are designed for unimodal large language models (LLMs). These methods treat quantization errors as isotropic perturbations under the Euclidean assumption, which provides weak guidance on directions most sensitive to quantization in VLMs. Consequently, directly adapting unimodal PTQ approaches or solely employing modality-specific scaling often leads to uneven bit-width distribution and inconsistent performance in low-bit settings. To address these challenges, we propose Riemannian Geometry-Sensitive Quantization (RGSQ), which formulates quantization as a reconstruction problem under a unified Fisher-Riemannian metric. RGSQ identifies modality-specific sensitive directions via Riemannian manifold mappings built from modality-partitioned empirical Fisher factors and fused into a modality-aware Kronecker-structured metric. We then apply geometry-aligned rotations to reorient the local tangent frame, steering low-bit perturbations toward loss-insensitive axes. Finally, we apply a whitening transformation that maps the Riemannian objective to an equivalent Euclidean form, enabling standard unimodal PTQ methods to evaluate multimodal quantization error under their original assumptions. Across an extensive and diverse set of mainstream VLM benchmarks, RGSQ achieves the highest accuracy and stability under extremely low-bit settings (W2A8 and W3A8). It outperforms VLM-aware baselines, such as MBQ and MQuant, by up to 5.9% and surpasses single-modality improvements by up to 8.6%.",
+      "summary_cn": "现有后训练量化方法多面向单模态大语言模型，将量化误差视为欧氏各向同性扰动，难以刻画视觉语言模型的敏感方向。本文提出黎曼几何敏感量化 RGSQ：在统一 Fisher–黎曼度量下把量化建模为重构问题，以模态划分的经验 Fisher 因子构造模态感知 Kronecker 度量识别敏感方向，再经几何对齐旋转与白化变换化归为等价欧氏形式。在主流 VLM 基准的 W2A8/W3A8 极低比特下，RGSQ 精度最优，较 MBQ、MQuant 最高提升 5.9%。",
+      "pdf_filename": "2609.25492.pdf",
+      "crawled_date": "2026-09-24",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2609.25492"
+    },
+    {
+      "arxiv_id": "2609.25376",
+      "title": "VLAQuantBench: Closed-Loop Evaluation of Post-Training Quantization for Vision-Language-Action Models",
+      "authors": "Jiuyi Xu, Qing Jin, Meida Chen, Song Wang, Yang Sui, Yangming Shi",
+      "affiliations": "Colorado School of Mines; Independent Researcher; University of Central Florida; USC Institute for Creative Technologies; Microsoft AI",
+      "published_date": "2026-09-21",
+      "categories": "cs.RO, cs.AI",
+      "abstract": "Post-training quantization reduces the memory requirements of vision-language-action (VLA) models, but precision selection must account for the interaction between layer scope, numerical format, and calibration. We introduce \\textbf{VLAQuantBench}, a controlled evaluation with 409 runs and 94,574 simulation episodes: four models on LIBERO, with X-VLA additionally evaluated on three simulation benchmark families. Under uncalibrated W4A4 round-to-nearest quantization, expanding a $π_{0.5}$ action-head subset from 126 to 167 layers raises success from 7.0\\% to 70.5\\%. Fixed-observation replay confirms a corresponding numerical recovery. Two-episode calibration removes the severe joint failures in the tested subsets, whereas the same smoothing-and-clipping recipe lowers $π_0$ success and does not recover OpenVLA-OFT end-to-end. For OpenVLA-OFT, protecting one 28,672-parameter output projection instead restores near-baseline success: the remaining 441 eligible linear layers retain W3 on LIBERO-Long or eight-bit activations across all four suites. Task-clustered intervals support the large failure and recovery contrasts. These results establish recipe-dependent interactions and identify concrete precision assignments, rather than universal layer-sensitivity rules. Real-kernel and physical-robot measurements complement the accuracy analysis. Code, configurations, and episode records are publicly available at https://github.com/jiuyixu25/VLAQuantBench.",
+      "summary_cn": "本文提出 VLAQuantBench，对视觉-语言-动作模型的后训练量化开展闭环评测，含 409 组实验与 94,574 回合仿真。结果显示量化层范围、数值格式与校准方式高度耦合：π0.5 动作头量化层从 126 扩至 167 可使成功率由 7.0% 升至 70.5%，两步校准能消除严重联合失效，但相同平滑裁剪配方却降低 π0 且无法恢复 OpenVLA-OFT；仅保护其 28,672 参数输出投影即可接近基线。结论强调精度分配依赖具体配方，而非通用层敏感度规则。",
+      "pdf_filename": "2609.25376.pdf",
+      "crawled_date": "2026-09-24",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2609.25376"
+    },
     {
       "arxiv_id": "2609.24875",
       "title": "SPHQuant: Efficient extreme low bit weight quantization for Vision-Language Models",
