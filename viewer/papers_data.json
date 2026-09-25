@@ -1,10 +1,38 @@
 {
-  "count": 607,
+  "count": 609,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-09-24",
+  "crawled_date_max": "2026-09-25",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2609.28757",
+      "title": "Small yet Assistive: Spatially-Aware Post-Training for Low Vision",
+      "authors": "Rishabh Choudhary, Shreyansh Raj, Umesh Goyal, Shubh Kashyap, Shrestha Kumar, Sushovan Jena, Komal Kumar, Hisham Cholakkal, Aditya Nigam",
+      "affiliations": "Indian Institute of Technology Mandi; Mohamed bin Zayed University of Artificial Intelligence",
+      "published_date": "2026-09-23",
+      "categories": "cs.CV, cs.CL",
+      "abstract": "An estimated 1 billion people worldwide live with vision impairment, yet current vision-language models (VLMs) produce descriptions too vague for safe navigation by blind and low-vision (BLV) users. Large VLMs can generate high-quality audio-description-compliant narrations but cannot run on mobile devices; small VLMs offer competitive latency but lack spatial detail, directional cues, and hazard awareness for navigational assistance. We present Smol-VL-BLV, a compact VLM for blind and low-vision users that closes this gap using a 500M decoder transformer model and two post-training mechanisms: (1) teacher-student distillation and (2) Group Relative Policy Optimization (GRPO) with a composite BLV reward targeting directional language, metric distances, and hazard detection. Because multi-stage post-training can induce catastrophic forgetting, we add a lightweight finetuning stage after the last stage GRPO finetuning to recover general descriptive quality while preserving BLV-specific spatial grounding. Our best model substantially outperforms the baseline across various benchmarks, including tasks: VQA, BLV captioning, OCR, and latency. Compared with the baseline for relative improvement, it improves the Spatial score gain of 19.3%, and the Social score gain of 14.8%. It also increases OCR-Bench by 101.5%, and raises TextVQA accuracy by 44.2%. These results show that BLV-focused post-training improves both accessibility-specific spatial grounding and general visual-text reasoning. Deployed on a mid-range Android smartphone via Mixed-Precision Quantization, the model remains approx. 450 MB and runs entirely on-device, offline and without network dependency, generating descriptions with latency dependent on host hardware capabilities. Our model, dataset, and code is publicly released at https://smol-vl-blv.github.io/Smol-VL-BLV-website/",
+      "summary_cn": "提出面向盲人与低视力用户的紧凑视觉语言模型 Smol-VL-BLV，以 500M 解码器为基座，用教师–学生蒸馏和含方向语言、米制距离、危险检测复合奖励的 GRPO 后训练，并在末段加轻量微调缓解灾难性遗忘。空间与社交得分分别提升 19.3%、14.8%，OCR-Bench 提升 101.5%，TextVQA 提升 44.2%；混合精度量化后约 450MB，可在中端安卓手机端离线运行。",
+      "pdf_filename": "2609.28757.pdf",
+      "crawled_date": "2026-09-25",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2609.28757"
+    },
+    {
+      "arxiv_id": "2609.28739",
+      "title": "Temporal Taxation Compounds Under Post-Training Compression of Whisper Models",
+      "authors": "Srishti Ginjala, Eric Fosler-Lussier, Christopher W. Myers, Srinivasan Parthasarathy",
+      "affiliations": "The Ohio State University, Columbus, OH, USA; Air Force Research Laboratory, USA",
+      "published_date": "2026-09-23",
+      "categories": "cs.CL, cs.SD",
+      "abstract": "Automatic speech recognition models are audited for demographic fairness at full precision, yet the models that ship to production have been quantized, pruned, and distilled. We ask whether post-training weight compression, which alters model weights rather than the audio signal or its feature representation, redistributes error burden across demographic groups. Across the Whisper family on Fair-Speech, Common Voice 25, and AfriSpeech-200, 50% Wanda pruning of Whisper-large-v3 sharply widens the Black/AA-vs-Asian temporal-taxation differential on Fair-Speech: the absolute word-error-rate gap between the worst- and best-served groups more than doubles; at an assumed cost of five seconds of correction effort per transcription error this is a rise from 30 to 64 seconds of correction time per minute of speech. This +111% relative increase is invariant to the assumed per-error cost, survives an audio-quality control, and is only partly mitigated by beam-search decoding, which still leaves an +86% increase. At edge model size, INT4 HQQ quantization compounds catastrophic transcript loops on West African accents by factors of five to seven. Distillation, by contrast, narrows demographic gaps in 21 of 27 evaluated settings (teacher-student pair, precision, and dataset), with the exceptions concentrated on a single model pair. We cast the temporal-taxation construct of Choi and Choi (2025) as a quantitative metric, and show that single-snapshot fairness audits on full-precision models do not capture the deployment-time burden that compression places on already-marginalized speakers.",
+      "summary_cn": "研究 Whisper 语音模型在训练后剪枝、量化与蒸馏下的人口公平性。50% Wanda 剪枝使 Whisper-large-v3 在 Fair-Speech 上最优与最差群体词错误率差距翻倍（+111%），每分钟校正时间由 30 秒升至 64 秒；INT4 HQQ 量化使西非口音转录循环暴增 5–7 倍；蒸馏在 27 个设置中 21 个缩小了差距。作者将时间税量化为指标，表明全精度单次审计无法反映部署负担。",
+      "pdf_filename": "2609.28739.pdf",
+      "crawled_date": "2026-09-25",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2609.28739"
+    },
     {
       "arxiv_id": "2609.25492",
       "title": "RGSQ: Riemannian Geometry-Sensitive Quantization for Large Vision-Language Models",
