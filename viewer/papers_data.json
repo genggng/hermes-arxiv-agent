@@ -1,10 +1,24 @@
 {
-  "count": 609,
+  "count": 610,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-09-25",
+  "crawled_date_max": "2026-09-26",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2609.30009",
+      "title": "Automated Regulatory Compliance Question Answering in Financial Services with Domain-Adapted Retrieval-Augmented Generation",
+      "authors": "Tobias Deußer, Abhishek Pillai, Aurelio F. Bariviera, Dhananjay Bhardwaj, Lorenz Sparrenberg, David Berghaus, Christian Bauckhage, Rafet Sifa",
+      "affiliations": "University of Bonn, Bonn, Germany; Lamarr-Institute for Machine Learning and Artificial Intelligence, Bonn, Germany; Universitat Rovira i Virgili, Reus, Spain; Fraunhofer IAIS, Sankt Augustin, Germany",
+      "published_date": "2026-09-24",
+      "categories": "cs.CL, cs.AI",
+      "abstract": "Financial institutions operate under dense, frequently amended rulebooks, and answering a compliance question correctly requires not only fluency but verifiable grounding in the authoritative text. Large language models are attractive for this task, yet the models that firms can realistically deploy on-premise are compact ones, and compact models hallucinate obligations. We study whether a carefully domain-adapted retrieval-augmented generation pipeline closes that gap. Our retriever is built in three stages on top of LegalBERT: entailment tuning that recasts question--passage matching as premise--hypothesis reconstruction, contrastive tuning with in-batch negatives, and score-level fusion with BM25. Our generator is a compact model (2B--12B parameters) served under 4-bit quantization, either prompted or adapted with retrieval-aware fine-tuning (RAFT) through LoRA. On ObliQA, a question-answering benchmark built from the Abu Dhabi Global Market rulebooks, the staged retriever raises Recall@10 from 0.256 to 0.774 and outperforms BM25 (0.678) and E5-large-v2 (0.758), the strongest general-purpose dense encoder we tested. RAFT-LoRA then improves the composite RePASs answer-quality score for every model we could adapt, with the largest gain on the weakest one. However, the adapted models do not transfer to Australian case-law questions, and a closed-book model that receives no passages at all scores within 0.011 RePASs of the full pipeline while producing answers that cite nothing and misstate obligations. The retrieval gain is therefore measured directly, the generation gain is a gain in RePASs rather than demonstrated grounding, and grounding itself requires an evaluation protocol that RePASs does not provide.",
+      "summary_cn": "论文针对金融合规问答构建领域自适应 RAG 流水线：检索端基于 LegalBERT 做蕴含微调、批内负样本对比微调并与 BM25 分数融合；生成端使用 4 比特量化的 2B–12B 小模型，可选 RAFT-LoRA 微调。在 ObliQA 上 Recall@10 由 0.256 升至 0.774，超越 BM25 与 E5-large-v2；RAFT-LoRA 提升可适配模型的 RePASs 得分，最弱模型增益最大。但适配模型无法迁移至澳大利亚判例，闭卷模型仅低 0.011 分，说明该指标难以衡量真实溯源。",
+      "pdf_filename": "2609.30009.pdf",
+      "crawled_date": "2026-09-26",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2609.30009"
+    },
     {
       "arxiv_id": "2609.28757",
       "title": "Small yet Assistive: Spatially-Aware Post-Training for Low Vision",
