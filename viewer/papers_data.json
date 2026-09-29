@@ -1,10 +1,38 @@
 {
-  "count": 617,
+  "count": 619,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-09-28",
+  "crawled_date_max": "2026-09-29",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2609.32803",
+      "title": "Nutri-ATLAS: Embodied Agent for Tabulated Lookup and Assistance for Smarter nutrition",
+      "authors": "Uttej Kallakuri, Boxun Hu, Ankur A. Butala, Najim Dehak, Tinoosh Mohsenin",
+      "affiliations": "Department of Electrical and Computer Engineering, Johns Hopkins University, Baltimore, MD, USA; Geriatric Engineering, Johns Hopkins University, Baltimore, MD, USA; Departments of Neurology and Neurosurgery, Johns Hopkins Medicine, Baltimore, MD, USA",
+      "published_date": "2026-09-26",
+      "categories": "cs.AI",
+      "abstract": "Generative and Agentic IoT systems offer a promising foundation for digital healthcare applications that combine sensing, personalized reasoning, and autonomous interaction in real-world environments. Nutrition assistance is a natural use case, but existing Large Language Model (LLM)-based systems are often limited to passive text interaction and static context, making them unreliable when food descriptions are ambiguous or nutritional evidence is missing. We propose Nutri-ATLAS, an Embodied Agent for Tabulated Lookup and Assistance for smarter nutrition in the real world. It integrates graph-grounded nutrition reasoning, hardware-aware LLM selection, and robot-based evidence acquisition. Nutri-ATLAS builds a unified Food-Nutrient knowledge graph from USDA FoodData Central and FoodKG and learns 64-dimensional GATv2 food and recipe embeddings. A shared hybrid graph-text scoring mechanism supports food nutrition extraction, nutritional gap filling, substitute retrieval, and recipe-level meal composition, while an LLM-guided skill interface navigates landmarks, updates dietary-context and food-accessibility memory, and grounds recommendations in observed food availability. We evaluate Nutri-ATLAS across nutrient estimation, substitution retrieval, recipe recommendation, patient-profile adherence, edge deployment, and real-world embodied execution. On HealthyFoodSubs, the hybrid retriever achieves 37.9% MAP, 80.7% RR@5, and 90.1% RR@10. On NutriBench v2, Dense+GAT retrieval grounds nutrient estimation across nine quantized Qwen3.5-9B configurations. On PFoodReQ, Nutri-ATLAS reaches 78.8% MAP, 83.0% MAR, and 77.5% F1. A patient-profile study shows adherence to allergy and healthy-target constraints for all selected cases.",
+      "summary_cn": "提出具身营养助手Nutri-ATLAS，融合图谱营养推理、硬件感知的大模型选择与机器人证据采集：基于USDA FoodData Central和FoodKG构建食物-营养知识图谱并学习64维GATv2嵌入，用图-文混合打分支持营养抽取、缺口填补、替代检索与食谱组合。HealthyFoodSubs上达37.9% MAP与90.1% RR@10，PFoodReQ上F1为77.5%，九种量化Qwen3.5-9B配置完成养分估计，患者画像实验全部满足过敏与健康约束。",
+      "pdf_filename": "2609.32803.pdf",
+      "crawled_date": "2026-09-29",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2609.32803"
+    },
+    {
+      "arxiv_id": "2609.31663",
+      "title": "LLM-Guided Ontology-Driven Knowledge Graph Construction from Unstructured Text",
+      "authors": "Abdelhadi Belfadel, Maxence Gagnant, Joseph Kattan, Sana Tmar",
+      "affiliations": "Institute for Technological Research - IRT SystemX, 2 Bd Thomas Gobert, 91120 Palaiseau, France",
+      "published_date": "2026-09-15",
+      "categories": "cs.CL",
+      "abstract": "Ontology-driven knowledge graph construction from industrial text remains challenging due to the domain specificity of documents, the scarcity of annotated resources, and the complexity of ontology engineering workflows. This paper presents and investigates the applicability of an ontology learning pipeline that combines compact open-source Large Language Models (LLMs), reusable prompting strategies, and open knowledge bases to support the extraction, structuring, enrichment, and evaluation of knowledge from textual corpora. The approach is tested and evaluated on a private French corpus of power-grid incident reports, using locally deployable open-source LLMs ranging from 7B to 32B parameters. Starting from unstructured reports, the approach extracts entities and relations, generates RDF triples, constructs related OWL ontology, enriches it using external knowledge sources, assesses the quality of the ontology, and subsequently constructs a populated knowledge graph grounded in the resulting ontology schema. Experiments on 80 manually annotated private reports show that schema-guided prompting significantly improves extraction quality, while quantized models provide an effective trade-off between performance and computational cost. These results demonstrate the feasibility of transforming domain-specific industrial text into ontology-based knowledge graphs using locally deployed open-source LLMs, while supporting the generalization of the extraction process through reusable prompting strategies.",
+      "summary_cn": "提出本体驱动的知识图谱构建流水线，把7B–32B开源大模型与可复用提示策略、开放知识库结合，从无结构工业文本中抽取实体关系并生成RDF三元组、OWL本体，再完成语义富集与质量评估。在法国电网事故报告语料上对80份人工标注报告的实验显示，模式引导提示显著提升抽取质量，量化模型在性能与算力成本间取得有效折中。",
+      "pdf_filename": "2609.31663.pdf",
+      "crawled_date": "2026-09-29",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2609.31663"
+    },
     {
       "arxiv_id": "2609.31371",
       "title": "Towards Understanding LLM-Based Log Anomaly Detection: An Empirical Study of Performance, Efficiency, and Robustness",
