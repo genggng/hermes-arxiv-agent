@@ -1,10 +1,24 @@
 {
-  "count": 631,
+  "count": 632,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-09-30",
+  "crawled_date_max": "2026-10-01",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2609.37842",
+      "title": "Scaling Influence Functions in LLMs through Eigenbasis-Corrected One-Bit Gradient Projection",
+      "authors": "Jaeseung Heo, J Rosser, Dongwoo Kim",
+      "affiliations": "POSTECH; University of Oxford",
+      "published_date": "2026-09-29",
+      "categories": "cs.LG, cs.AI",
+      "abstract": "Influence functions estimate how individual training examples affect the behavior of large language models (LLMs). Analyzing how training data influence different behaviors of an LLM involves repeated influence computation. Reusing stored training gradients reduces the computational cost, but storing full gradients is prohibitively expensive at LLM scale. We study how to compress these gradients while preserving influence estimates for future queries that are unknown at storage time. Through a worst-case analysis, we characterize the optimal fixed-dimensional linear representation and propose eigenbasis-corrected one-bit gradient projection (EOGP) to approximate it at scale. Specifically, EOGP uses EK-FAC to reduce gradient dimensionality, then applies PCA within the retained subspace to learn compression directions from the training gradients. We then apply one-bit quantization to the resulting coordinates, allowing more coordinates to be retained within a fixed storage budget. On GPT-2, EOGP predicts retraining outcomes more accurately than the evaluated compression baselines while using one-sixteenth of their per-example storage. On OLMo 2 SFT models from 1B to 32B parameters, EOGP remains competitive with the baselines allocated over 100 times as much storage per example.",
+      "summary_cn": "本文针对大语言模型影响函数中训练梯度存储代价过高的问题，通过最坏情况分析刻画最优定维线性表示，提出特征基校正的单比特梯度投影（EOGP）：先用 EK-FAC 降维，再用 PCA 在子空间学习压缩方向并做单比特量化。在 GPT-2 上其存储仅为基线十六分之一而预测更准，在 1B 至 32B 的 OLMo 2 上也与存储高百倍的基线相当。",
+      "pdf_filename": "2609.37842.pdf",
+      "crawled_date": "2026-10-01",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2609.37842"
+    },
     {
       "arxiv_id": "2609.36828",
       "title": "Calibrate the Decisions That Change the Future: On-Policy Post-Training Quantization for Multimodal Large Language Models",
