@@ -1,10 +1,80 @@
 {
-  "count": 639,
+  "count": 644,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-10-02",
+  "crawled_date_max": "2026-10-03",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2610.01537",
+      "title": "FedFit: Federated Fine-Tuning of LLMs via Vector-Bank Parameterization and Quantization",
+      "authors": "Hang Zou, Chao Zhang, Yuzhi Yang, Yu Tian, Samson Lasaulce, Mérouane Debbah",
+      "affiliations": "6G Research Center, Khalifa University, Abu Dhabi, UAE; Department of Computer Science, Central South University, Changsha, China; Université de Lorraine, CNRS, CRAN, Nancy, France",
+      "published_date": "2026-10-01",
+      "categories": "cs.LG",
+      "abstract": "Federated Learning (FL) enables privacy-preserving fine-tuning of Large Language Models (LLMs), yet the massive communication overhead remains a critical bottleneck. Furthermore, applying Low-Rank Adaptation (LoRA) in FL faces a fundamental \"aggregation dilemma\" between the accurate Sum-of-Products (SoP) and the communication-efficient Product-of-Sums (PoS) implementations. To tackle these challenges, we propose FedFit. First, to significantly reduce communication overhead, we introduce a disjoint shared vector-bank parameterization that reconstructs high-dimensional adapter matrices from two compact and disjoint global vector banks. Second, to address the aggregation dilemma, we devise an alternating optimization schedule. By cycling between decoupled single-bank updates (which allow for accurate aggregation) and joint updates corrected by a Residual Spectral Aggregation mechanism, we resolve the conflict between SoP and PoS. Additionally, we integrate blockwise quantization with client-side error feedback to further compress the transmitted vectors. Furthermore, we establish theoretical convergence guarantees for the proposed algorithm. Extensive experiments on Qwen2.5 models demonstrate that FedFit achieves perplexity performance comparable to standard federated LoRA methods, while providing compression ratios up to 100x higher.",
+      "summary_cn": "针对联邦微调LLM通信开销大及LoRA在联邦场景下求和-积与积-求和之间的聚合困境，本文提出FedFit：用两个紧凑且不相交的全局向量库重建高维适配器矩阵以降低通信量；并以交错优化调度在解耦单库更新与经残差谱聚合校正的联合更新间循环，化解SoP与PoS冲突，同时结合分块量化与客户端误差反馈压缩传输向量，并给出收敛性保证。在Qwen2.5上困惑度与标准联邦LoRA相当，压缩比最高提升100倍。",
+      "pdf_filename": "2610.01537.pdf",
+      "crawled_date": "2026-10-03",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.01537"
+    },
+    {
+      "arxiv_id": "2610.00613",
+      "title": "Spatial Strategies, Not Actions: Vector-Quantized Geodesics as Tools for LLM-Driven Agents",
+      "authors": "Gabriel Turinici",
+      "affiliations": "CEREMADE, CNRS, Université Paris Dauphine - PSL",
+      "published_date": "2026-09-30",
+      "categories": "cs.AI, cs.RO, eess.SY",
+      "abstract": "Large language model (LLM) based agents are often criticized for lacking spatial understanding and mainly exploiting statistical text patterns. We investigate their spatial comprehension through an architecture combining geometrical tools with a LLM serving as a high-level orchestrator in grid-world environments. The agent first collects geodesic trajectories, which are then vector-quantized to extract a representative subset. Offline, the LLM associates a natural language description of the underlying behavioral patterns to each selected trajectory, making it a tool. Online, the LLM chooses the appropriate tool conditioned on the current state and goal. Low-level control is handled by primitive actions that execute the trajectory associated with the tool. From an agentic AI perspective, this approach separates learning into two levels: tool discovery is handled through unsupervised quantization of trajectories, while reasoning and decision-making are handled by the LLM. We test the approach in a partially observable dynamic 2D grid environment with an open vision-language model (Qwen3.6-35B-A3B). Pairing the geometry-derived tool library with an agent-centered zoom tool and a collision detection tool lets a fast, non-reasoning configuration match the goal-reaching rate of a much more costly chain-of-thought version, while cutting the cost of a decision from minutes to seconds.",
+      "summary_cn": "本文研究LLM智能体的空间理解能力，提出几何工具与LLM高层调度相结合的架构。智能体先采集测地轨迹，经矢量量化提取代表性轨迹子集，由LLM离线为每条轨迹关联行为模式的自然语言描述以形成工具；在线时LLM依据状态与目标选择工具，底层由原语动作执行。在部分可观测动态2D网格环境中，几何工具库配合缩放与碰撞检测工具，使非推理配置达到高成本思维链版本的目标到达率，并把单次决策成本从数分钟降至数秒。",
+      "pdf_filename": "2610.00613.pdf",
+      "crawled_date": "2026-10-03",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.00613"
+    },
+    {
+      "arxiv_id": "2610.00465",
+      "title": "AIR-LLM: Broadcasting AI Weights over Radio for Memory-Free Edge LLM Inference via RF Computing",
+      "authors": "Zhihui Gao, Tingjun Chen, Dirk Englund",
+      "affiliations": "Massachusetts Institute of Technology; Duke University",
+      "published_date": "2026-09-30",
+      "categories": "cs.IT, cs.ET, cs.LG, eess.SP, physics.app-ph",
+      "abstract": "Next-generation large language models (LLMs) are expanding from the cloud to ubiquitous edge devices. However, edge devices typically either lack the memory to store increasingly large LLM weights or, even with enough memory, spend unaffordable energy on loading the weights. This raises our question: can an edge device run an LLM without storing or loading its weights, but receive them over the air and consume them on the fly? Inspired by wireless broadcasting, we present AIR-LLM, an LLM inference architecture for edge devices, which is composed of: (i) a central radio (e.g., 5G base stations) that broadcasts the LLM weights into the air, and (ii) the edge user that receives the weights and completes the general matrix-vector multiplication (GEMV) of LLM inference directly in the radio frequency (RF) domain using RF mixers. To further shorten the airtime, AIR-LLM exploits MIMO spatial multiplexing and proposes an energy-efficient precoder-postcoder pair on the edge to calibrate its own wireless channel. Since the central radio stays user-unaware, AIR-LLM is user-scalable so that one broadcast serves unlimited users within its coverage. We implement AIR-LLM on the NVIDIA Sionna ray-traced channels of two real-world urban scenes and the profiling of a real RF mixer. With a WikiText-2 perplexity degradation of 4.0% on LLaMA-3.1-8B, AIR-LLM saves the energy by 157.7x/40.4x against the FP16 and weight-only quantization baselines; with 20 users, its airtime is 104.1x/26.0x shorter, respectively.",
+      "summary_cn": "针对边缘设备难以存储或加载大规模LLM权重的问题，本文提出AIR-LLM：中心基站把LLM权重广播到空中，边缘用户用RF混频器在射频域直接完成推理的矩阵-向量乘法，实现免存储、免加载的边端推理。方案利用MIMO空间复用并提出能效预编码-后编码对校准信道，中心侧无需感知用户，可单次广播服务不限量用户。实测LLaMA-3.1-8B困惑度仅退化4.0%，能效较FP16与权重量化基线提升157.7倍/40.4倍。",
+      "pdf_filename": "2610.00465.pdf",
+      "crawled_date": "2026-10-03",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.00465"
+    },
+    {
+      "arxiv_id": "2610.00432",
+      "title": "XOR-Trellis: Ultra-Low-Complexity Dequantization and Curvature-Aware Hadamard-Free LLM Quantization",
+      "authors": "Xiaofan Que, Nir Elkayam, Spandan Pyakurel, Shuokai Pan, Dibakar Gope",
+      "affiliations": "Arm, Inc.; Rochester Institute of Technology",
+      "published_date": "2026-09-30",
+      "categories": "cs.LG, cs.AI",
+      "abstract": "Trellis-coded quantization enables high-dimensional compression of large language model (LLM) weights at ultra-low bit widths without the exponentially large codebooks required by conventional vector quantization. Practical deployment, however, presents two challenges: reconstructing compressed weights at sufficient parallel throughput to avoid making dequantization an inference bottleneck, and maintaining quantization accuracy without costly incoherence transformations. We address these challenges with two complementary techniques. First, we introduce an ultra-low-complexity trellis dequantizer that uses a structured, hardware-efficient state-to-value mapping while preserving diverse reconstruction choices for trellis search. Second, we reformulate discrete trellis path optimization with a curvature-aware objective that reflects model sensitivity directly in the original coordinate space. Together, these techniques enable high-quality ultra-low-bit trellis quantization with inexpensive, highly parallel runtime reconstruction and without relying on Hadamard-based incoherence processing.",
+      "summary_cn": "针对超低位宽格栅编码量化解量化吞吐不足且依赖Hadamard非相干变换的问题，本文提出XOR-Trellis。其一设计超低复杂度解量化器，用结构化且硬件友好的状态到数值映射同时保留多样重构选择；其二以曲率感知目标在原坐标空间直接反映模型敏感度来重构离散格栅路径优化。方法无需Hadamard处理即可实现高质量超低位格栅量化，并支持低成本、高并行的运行时权重重构。",
+      "pdf_filename": "2610.00432.pdf",
+      "crawled_date": "2026-10-03",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.00432"
+    },
+    {
+      "arxiv_id": "2610.00311",
+      "title": "EdgeDAE: Acceleration of Diffusion Action Experts for Real-Time Physical AI with Tiny VLAs on Edge FPGA-GPU Systems",
+      "authors": "Zhiheng Chen, Ye Qiao, Mohammad Abdullah Al Faruque, Sitao Huang",
+      "affiliations": "Department of Electrical Engineering and Computer Science, University of California, Irvine",
+      "published_date": "2026-09-28",
+      "categories": "cs.AR",
+      "abstract": "Physical AI models such as Vision-Language-Action (VLA) architectures enable generalist robotic policies through large-scale transformer backbones and diffusion-based action decoders. While edge GPU platforms excel at parallelizing the compute-intensive vision-transformer workloads, they exhibit fundamental limitations for the Diffusion Action Expert (DAE) module: the iterative denoising process requires repeated parameter loading from DRAM across multiple steps, resulting in memory-bound performance where the GPU's massive computational throughput remains underutilized. This mismatch between DAE's I/O-intensive characteristics and GPU's compute-centric architecture motivates a heterogeneous acceleration approach. This paper presents \\textbf{EdgeDAE}, a heterogeneous FPGA-GPU system that strategically partitions workloads based on computational characteristics. We offload the perception-heavy vision-transformer to GPU while accelerating DAE inference on FPGA through complete on-chip parameter storage in BRAM/URAM. This architecture eliminates the memory bottleneck by co-designing quantization strategies, fixed-point arithmetic, and hardware-efficient random number generation for the FPGA fabric. Compared to an edge GPU baseline, EdgeDAE reduces end-to-end inference latency by 52.5\\% for Octo-Small and 38.7\\% for Octo-Base, with up to $2.10\\times$ higher throughput; compared to a consumer GPU (RTX~4090), it achieves ${\\sim}17\\times$ higher energy efficiency.",
+      "summary_cn": "针对边缘GPU上扩散动作专家DAE因反复从DRAM加载参数而陷入内存瓶颈的问题，本文提出异构FPGA-GPU系统EdgeDAE：将感知视觉Transformer卸载至GPU，在FPGA上以BRAM/URAM全片上存储加速DAE推理，并协同设计量化、定点运算与硬件随机数生成。相比边缘GPU基线，端到端延迟在Octo-Small与Octo-Base上分别降低52.5%和38.7%，吞吐最高提升2.10倍，能效较RTX 4090提升约17倍。",
+      "pdf_filename": "2610.00311.pdf",
+      "crawled_date": "2026-10-03",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.00311"
+    },
     {
       "arxiv_id": "2610.01058",
       "title": "MOMAT: Mixture of Multiple Atlases for Low-Power Jailbreak Defense of Quantized LLMs",
@@ -174,7 +244,7 @@
       "pdf_url": "https://arxiv.org/pdf/2609.36376"
     },
     {
-      "arxiv_id": "2609.36120",
+      "arxiv_id": "2609.3612",
       "title": "ThinQuant: Scalable Rotation Learning for Weight and Activation Quantization of LLMs",
       "authors": "Mehdi Makni, Ryan Lucas, Rahul Mazumder",
       "affiliations": "Operations Research Center, Massachusetts Institute of Technology",
@@ -185,7 +255,7 @@
       "pdf_filename": "2609.36120.pdf",
       "crawled_date": "2026-09-30",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2609.36120"
+      "pdf_url": "https://arxiv.org/pdf/2609.3612"
     },
     {
       "arxiv_id": "2609.35586",
@@ -216,7 +286,7 @@
       "pdf_url": "https://arxiv.org/pdf/2609.34765"
     },
     {
-      "arxiv_id": "2609.34680",
+      "arxiv_id": "2609.3468",
       "title": "QuantForge: Discovering Residual Decompositions for MXFP4 Post-Training Quantization",
       "authors": "Qiulin Shang, Zhoutong Wu, Jie Hu, Kun Yuan",
       "affiliations": "Peking University",
@@ -227,7 +297,7 @@
       "pdf_filename": "2609.34680.pdf",
       "crawled_date": "2026-09-30",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2609.34680"
+      "pdf_url": "https://arxiv.org/pdf/2609.3468"
     },
     {
       "arxiv_id": "2609.34259",
@@ -566,7 +636,7 @@
       "pdf_url": "https://arxiv.org/pdf/2609.23367"
     },
     {
-      "arxiv_id": "2609.23130",
+      "arxiv_id": "2609.2313",
       "title": "From Inference Engine to Inference Control Plane: Connecting vLLM, llm-d, and the Evolution of Efficient Distributed LLM Serving",
       "authors": "Twinkll Sisodia",
       "affiliations": "Boston University",
@@ -577,10 +647,10 @@
       "pdf_filename": "2609.23130.pdf",
       "crawled_date": "2026-09-23",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2609.23130"
+      "pdf_url": "https://arxiv.org/pdf/2609.2313"
     },
     {
-      "arxiv_id": "2609.22870",
+      "arxiv_id": "2609.2287",
       "title": "Towards Full Pipeline FP8 Reinforcement Learning for LLMs",
       "authors": "Fanchao Chen, Ziheng Jiang, Ziyun Wei, Zheng Zhong, Du Li, Chi Zhang, Haibin Lin, Shivaram Venkataraman",
       "affiliations": "University of Wisconsin–Madison; ByteDance Seed",
@@ -591,7 +661,7 @@
       "pdf_filename": "2609.22870.pdf",
       "crawled_date": "2026-09-23",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2609.22870"
+      "pdf_url": "https://arxiv.org/pdf/2609.2287"
     },
     {
       "arxiv_id": "2609.22216",
@@ -636,7 +706,7 @@
       "pdf_url": "https://arxiv.org/pdf/2609.21704"
     },
     {
-      "arxiv_id": "2609.21450",
+      "arxiv_id": "2609.2145",
       "title": "Understanding LLM Quantization through Activation-Guided Compensation and Orthogonal Residuals",
       "authors": "Yamato Narita, Issei Sato",
       "affiliations": "Department of Computer Science, The University of Tokyo",
@@ -647,7 +717,7 @@
       "pdf_filename": "2609.21450.pdf",
       "crawled_date": "2026-09-22",
       "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2609.21450"
+      "pdf_url": "https://arxiv.org/pdf/2609.2145"
     },
     {
       "arxiv_id": "2609.20807",
