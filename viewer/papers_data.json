@@ -1,10 +1,38 @@
 {
-  "count": 647,
+  "count": 649,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-10-05",
+  "crawled_date_max": "2026-10-06",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2610.04651",
+      "title": "GS-Codec: A Gaussian-Splatting Bottleneck for Neural Audio Coding",
+      "authors": "Ron Aluf, Alon Canfi, Eliya Nachmani",
+      "affiliations": "School of Electrical and Computer Engineering, Ben-Gurion University of the Negev",
+      "published_date": "2026-10-03",
+      "categories": "cs.SD, cs.AI, cs.LG, eess.AS, eess.SP",
+      "abstract": "Neural audio codecs compress waveforms into compact discrete tokens that underpin speech language models, real-time communication, and large-scale audio storage. Almost every dominant design, including residual vector quantization, finite scalar quantization, and single-codebook variants, follows the VQ-VAE template by partitioning the encoder latent through a learned codebook or a fixed scalar grid. We ask whether this partition is necessary. We introduce GS-Codec, a neural speech codec whose bottleneck is a parametric signal decomposition rather than a quantizer. We adapt Gaussian splatting from 3D scene reconstruction to one-dimensional latents. An inner optimization loop fits each encoder segment as a weighted sum of 1D Gaussian primitives. The decoder then reconstructs the waveform from the rendered sum. To avoid the cost of this iterative inner loop at inference time, we additionally train a lightweight GS Predictor Net that regresses the primitive parameters in a single forward pass. The encoder and decoder are trained end-to-end through the inner loop, with no quantizer anywhere in the training pipeline: the bottleneck is the decomposition itself, and scalar quantization is applied only post-training to the fitted parameters. Rather than relying on discrete codebook stages for bitrate control, our representation exposes a fine-grained rate-quality tradeoff: a single trained checkpoint supports post-training bitrate control by varying the number of primitives and the per-parameter bit depth, with no retraining required. GS-Codec matches or exceeds well-established open-source codecs such as EnCodec and DAC on speaker similarity (SIM), intelligibility (STOI), and perceptual quality (UTMOS) at comparable bitrates, while achieving comparable semantic performance (WER). Code and audio samples are available at https://ronaluf.github.io/gs-codec/",
+      "summary_cn": "本文提出GS-Codec：将高斯泼溅从三维场景重建迁移到一维隐变量，以参数化信号分解取代量化器，内层优化把每段编码器特征拟合为高斯基元加权和，解码器据此重建波形并用轻量网络单步回归基元参数。单一模型即可通过调整基元数量与位深控制码率，相近码率下相似度、可懂度与感知质量超过EnCodec与DAC。",
+      "pdf_filename": "2610.04651.pdf",
+      "crawled_date": "2026-10-06",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.04651"
+    },
+    {
+      "arxiv_id": "2610.04490",
+      "title": "BARQ: Balanced Codebook Refinement for Low-Bit LLM Quantization",
+      "authors": "Chenhang Cui, Xu Xie, Linrui Xu, Xiaohao Liu, Xingyu Zhu, Fei Shen, Tat-Seng Chua",
+      "affiliations": "National University of Singapore; Central South University; Independent Researcher",
+      "published_date": "2026-10-03",
+      "categories": "cs.LG",
+      "abstract": "As large language models (LLMs) grow in parameter count, model storage and parameter memory traffic have become major bottlenecks to efficient deployment. Codebook-based weight quantization reduces these costs, but imbalanced nearest-codeword assignments during fitting can leave some codewords insufficiently updated, limiting effective codebook utilization. To address this limitation, we propose Balanced Assignment Refinement for Quantization (BARQ), which improves quantization quality through balanced fitting of existing codebooks. Specifically, we first compute joint soft assignments between weight blocks and codewords through entropically regularized optimal transport with uniform marginals and curvature-weighted reconstruction costs, ensuring equal positive fitting mass for every codeword in the exact solution. We then refine the codewords through an assignment-weighted barycentric update, which we prove minimizes the fitting objective for fixed assignments. For finite Sinkhorn iterations, the implemented update retains this optimality provided all codeword masses exceed the denominator floor. Finally, we discard the soft assignments and use the refined codebook for standard hard nearest-codeword encoding, with our analysis establishing sufficient conditions for reducing hard-quantization distortion and evaluation loss. Across multiple LLMs, BARQ achieves lower perplexity and higher mean zero-shot accuracy than the evaluated baselines at comparable bit budgets. The code is available at https://github.com/chenhangcuisg-code/BARQ.",
+      "summary_cn": "针对码本权重量化中最近码字分配不均衡、部分码字更新不足的问题，提出BARQ：以均匀边缘分布的熵正则化最优传输计算权重块与码字软分配，并引入曲率加权重建代价使各码字拟合质量均等；再以分配加权重心更新精炼码字，证明其最小化目标，最后用精炼码本做硬编码。多模型在相同比特预算下困惑度更低、零样本准确率更高。",
+      "pdf_filename": "2610.04490.pdf",
+      "crawled_date": "2026-10-06",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.04490"
+    },
     {
       "arxiv_id": "2610.03039",
       "title": "HyperThink: Text-to-Parameter Hypernetworks for Efficient Reasoning",
